@@ -1,0 +1,125 @@
+\hypertarget{ficheiros_8c}{}\doxysection{ficheiros.\+c File Reference}
+\label{ficheiros_8c}\index{ficheiros.c@{ficheiros.c}}
+{\ttfamily \#include \char`\"{}ficheiros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}encomendas.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{ficheiros_8c_a7430349d6888481fd12edadb4b24bc51}{ler\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\begin{DoxyCompactList}\small\item\em Carrega os clientes do ficheiro para memoria . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_a7145b2f30880dc9c7057ae983f6b4435}{registar\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\begin{DoxyCompactList}\small\item\em Guarda a lista de clientes da memoria para o ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_a08a255762ac23286d6b6bc0890a066ca}{ler\+Materiais}} (\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$componentes)
+\begin{DoxyCompactList}\small\item\em Carrega a lista de materiais do ficheiro para a memoria. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_a92b572e696336d2cb85957749df48c19}{registar\+Materiais}} (\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$componentes)
+\begin{DoxyCompactList}\small\item\em Guarda a lista de materiais da memoria para o ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_a59a5d809012e8638d4209568689be1b4}{ler\+Ficheiro\+Moveis}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos)
+\begin{DoxyCompactList}\small\item\em Le o ficheiro texto de produtos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_ad6d4b278d4a1b3416b3409ea863098a0}{escrever\+Ficheiro\+Movel}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos)
+\begin{DoxyCompactList}\small\item\em Guarda tudo de produtos no ficheiro texto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_afb522d58f8717a10a1ca10553aaa6157}{registar\+Encomendas}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas)
+\begin{DoxyCompactList}\small\item\em Guarda as encomendas da memoria para o ficheiro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_a3c1f40a37e08cd6cb2d78e49984ab469}{ler\+Encomendas}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas)
+\begin{DoxyCompactList}\small\item\em Carrega as encomendas do ficheiro para a memoria. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{ficheiros_8c_a046fc9114cf06d97520bbacea3a9259b}{logs}} (int $\ast$id, char $\ast$msg, char $\ast$nomeficheiro)
+\begin{DoxyCompactList}\small\item\em Guarda num ficheiro todas as açoes do funcionario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ficheiros_8c_ad6d4b278d4a1b3416b3409ea863098a0}\label{ficheiros_8c_ad6d4b278d4a1b3416b3409ea863098a0}} 
+\index{ficheiros.c@{ficheiros.c}!escreverFicheiroMovel@{escreverFicheiroMovel}}
+\index{escreverFicheiroMovel@{escreverFicheiroMovel}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{escreverFicheiroMovel()}{escreverFicheiroMovel()}}
+{\footnotesize\ttfamily void escrever\+Ficheiro\+Movel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos }\end{DoxyParamCaption})}
+
+
+
+Guarda tudo de produtos no ficheiro texto. 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_a7430349d6888481fd12edadb4b24bc51}\label{ficheiros_8c_a7430349d6888481fd12edadb4b24bc51}} 
+\index{ficheiros.c@{ficheiros.c}!lerClientes@{lerClientes}}
+\index{lerClientes@{lerClientes}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{lerClientes()}{lerClientes()}}
+{\footnotesize\ttfamily void ler\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+
+Carrega os clientes do ficheiro para memoria . 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_a3c1f40a37e08cd6cb2d78e49984ab469}\label{ficheiros_8c_a3c1f40a37e08cd6cb2d78e49984ab469}} 
+\index{ficheiros.c@{ficheiros.c}!lerEncomendas@{lerEncomendas}}
+\index{lerEncomendas@{lerEncomendas}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{lerEncomendas()}{lerEncomendas()}}
+{\footnotesize\ttfamily void ler\+Encomendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas }\end{DoxyParamCaption})}
+
+
+
+Carrega as encomendas do ficheiro para a memoria. 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_a59a5d809012e8638d4209568689be1b4}\label{ficheiros_8c_a59a5d809012e8638d4209568689be1b4}} 
+\index{ficheiros.c@{ficheiros.c}!lerFicheiroMoveis@{lerFicheiroMoveis}}
+\index{lerFicheiroMoveis@{lerFicheiroMoveis}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{lerFicheiroMoveis()}{lerFicheiroMoveis()}}
+{\footnotesize\ttfamily void ler\+Ficheiro\+Moveis (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos }\end{DoxyParamCaption})}
+
+
+
+Le o ficheiro texto de produtos. 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_a08a255762ac23286d6b6bc0890a066ca}\label{ficheiros_8c_a08a255762ac23286d6b6bc0890a066ca}} 
+\index{ficheiros.c@{ficheiros.c}!lerMateriais@{lerMateriais}}
+\index{lerMateriais@{lerMateriais}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{lerMateriais()}{lerMateriais()}}
+{\footnotesize\ttfamily void ler\+Materiais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes }\end{DoxyParamCaption})}
+
+
+
+Carrega a lista de materiais do ficheiro para a memoria. 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_a046fc9114cf06d97520bbacea3a9259b}\label{ficheiros_8c_a046fc9114cf06d97520bbacea3a9259b}} 
+\index{ficheiros.c@{ficheiros.c}!logs@{logs}}
+\index{logs@{logs}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{logs()}{logs()}}
+{\footnotesize\ttfamily void logs (\begin{DoxyParamCaption}\item[{int $\ast$}]{id,  }\item[{char $\ast$}]{msg,  }\item[{char $\ast$}]{nomeficheiro }\end{DoxyParamCaption})}
+
+
+
+Guarda num ficheiro todas as açoes do funcionario. 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_a7145b2f30880dc9c7057ae983f6b4435}\label{ficheiros_8c_a7145b2f30880dc9c7057ae983f6b4435}} 
+\index{ficheiros.c@{ficheiros.c}!registarClientes@{registarClientes}}
+\index{registarClientes@{registarClientes}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{registarClientes()}{registarClientes()}}
+{\footnotesize\ttfamily void registar\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+
+Guarda a lista de clientes da memoria para o ficheiro. 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_afb522d58f8717a10a1ca10553aaa6157}\label{ficheiros_8c_afb522d58f8717a10a1ca10553aaa6157}} 
+\index{ficheiros.c@{ficheiros.c}!registarEncomendas@{registarEncomendas}}
+\index{registarEncomendas@{registarEncomendas}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{registarEncomendas()}{registarEncomendas()}}
+{\footnotesize\ttfamily void registar\+Encomendas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas }\end{DoxyParamCaption})}
+
+
+
+Guarda as encomendas da memoria para o ficheiro. 
+
+@inherit\+Doc \mbox{\Hypertarget{ficheiros_8c_a92b572e696336d2cb85957749df48c19}\label{ficheiros_8c_a92b572e696336d2cb85957749df48c19}} 
+\index{ficheiros.c@{ficheiros.c}!registarMateriais@{registarMateriais}}
+\index{registarMateriais@{registarMateriais}!ficheiros.c@{ficheiros.c}}
+\doxysubsubsection{\texorpdfstring{registarMateriais()}{registarMateriais()}}
+{\footnotesize\ttfamily void registar\+Materiais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes }\end{DoxyParamCaption})}
+
+
+
+Guarda a lista de materiais da memoria para o ficheiro. 
+
+@inherit\+Doc 

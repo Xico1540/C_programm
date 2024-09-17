@@ -1,0 +1,463 @@
+\hypertarget{produtos_8h}{}\doxysection{produtos.\+h File Reference}
+\label{produtos_8h}\index{produtos.h@{produtos.h}}
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{produtos_8h_a2e265315405b36e1a0917cac4bb6bf90}{procura\+Componente}} (\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$listacomponentes, char $\ast$cod, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em Procura um componente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_aa3f65e689a4b2369b80419d9661cc949}{inserir\+Componente}} (\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$listacomponentes, \mbox{\hyperlink{struct_componente}{Componente}} $\ast$componente)
+\begin{DoxyCompactList}\small\item\em Insere um componente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produtos_8h_ad1ec7cab06d82441aa0f8c4d2b161394}{registar\+Componente}} (\mbox{\hyperlink{struct_componente}{Componente}} $\ast$componente)
+\begin{DoxyCompactList}\small\item\em Regista um componente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_a08a62a2e2a7a332012c5af7ccbb2b5a4}{atualizar\+Componente\+Descricao}} (\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$componentes, char $\ast$cod\+Mat, char descricaonova\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar a descriçao de um componente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_ad7465e6c221d25ac1d9f81b396dd59df}{atualizar\+Componente\+Unidade}} (\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$componentes, char $\ast$cod\+Mat, char unidadenova\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar a Unidade de um componente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_a9f1c5a0db4c6fabb1778d6217a6b4c1f}{remover\+Componente}} (\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$componentes, char $\ast$cod\+Mat)
+\begin{DoxyCompactList}\small\item\em remove um componente \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_a73f532dc5c9225d002510e69bc814f0f}{inserir\+Composicao\+Produto}} (\mbox{\hyperlink{struct_produto}{Produto}} $\ast$produto, \mbox{\hyperlink{struct_materiais}{Materiais}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em insere um componente num produto . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produtos_8h_a6fcb445ef42c315bd8535957bb4dd5da}{procura\+Composicao}} (\mbox{\hyperlink{struct_produto}{Produto}} $\ast$produto, char $\ast$cod, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em procura um componente num determinado produto \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produtos_8h_aad227591fb1ef26433f74953435a585b}{editar\+Composicao\+Quantidade}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, char $\ast$cod\+Mat, int numprocura, int quantidadenova)
+\begin{DoxyCompactList}\small\item\em Atualiza a quantidade de um componente num certo produto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_a3180295bd9226bcc00fd2258c9fdb0d3}{remover\+Composicao}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, char $\ast$cod\+Mat, int numprocura)
+\begin{DoxyCompactList}\small\item\em remove um componente de um determinado produto . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produtos_8h_a8bffa78452290e54210f07ca0ae639c4}{procura\+Produto}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$listaprodutos, char $\ast$cod, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em Procura um produto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_a2f116e9b5c2dcba6c2339d9e94fdb500}{inserir\+Produto}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$listaprodutos, \mbox{\hyperlink{struct_produto}{Produto}} $\ast$produto)
+\begin{DoxyCompactList}\small\item\em Insere um produto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produtos_8h_aae5dccc1c4f2a59e7302d4617cb9a023}{registar\+Produto}} (\mbox{\hyperlink{struct_produto}{Produto}} $\ast$produto, \mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$componentes, \mbox{\hyperlink{struct_componente}{Componente}} $\ast$componente)
+\begin{DoxyCompactList}\small\item\em Regista um produto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_a1812ac6e59bfa0d85f23eb514d88e0c7}{atualizar\+Produtonome}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, char $\ast$cod\+Mat, char nomenovo\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualiza o nome do produto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_acad3c809f86af70cb6a5511ce91c130c}{atualizar\+Produtodimensoes}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, char $\ast$cod\+Mat, char novasdimensoes\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualiza as dimensoes do produto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_a87bf99dbfb0737191e5a6c1ef6fe7800}{atualizar\+Produto\+Preco}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, char $\ast$cod\+Mat, float preconovo)
+\begin{DoxyCompactList}\small\item\em Atualiza o preco do produto. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{produtos_8h_ad51e8da13cf33401440e56f28ee8930a}{remover\+Produto}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, char $\ast$cod\+Mat)
+\begin{DoxyCompactList}\small\item\em Remove um produto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produtos_8h_a01c6d8e8ea0848a6b2b0c80b8d0c33b6}{troca\+Produtos}} (\mbox{\hyperlink{struct_produto}{Produto}} $\ast$produto1, \mbox{\hyperlink{struct_produto}{Produto}} $\ast$produto2)
+\begin{DoxyCompactList}\small\item\em Troca as posiçoes dos produtos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{produtos_8h_ae68062cef1385f3046cd891e4e37020a}{Ordena\+Produtos}} (\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos)
+\begin{DoxyCompactList}\small\item\em Ordena os produtos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{produtos_8h_a08a62a2e2a7a332012c5af7ccbb2b5a4}\label{produtos_8h_a08a62a2e2a7a332012c5af7ccbb2b5a4}} 
+\index{produtos.h@{produtos.h}!atualizarComponenteDescricao@{atualizarComponenteDescricao}}
+\index{atualizarComponenteDescricao@{atualizarComponenteDescricao}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{atualizarComponenteDescricao()}{atualizarComponenteDescricao()}}
+{\footnotesize\ttfamily int atualizar\+Componente\+Descricao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes,  }\item[{char $\ast$}]{cod\+Mat,  }\item[{char}]{descricaonova\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar a descriçao de um componente. 
+
+vai ao componente na posiçao retornada pelo procura componente e muda a descriçao para uma nova inserida pelo utilizador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em componentes} & lista de componentes \\
+\hline
+{\em cod\+Mat} & codigo do componente \\
+\hline
+{\em descricaonova} & nova descriçao\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se nao existir , 1-\/ se alterar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_ad7465e6c221d25ac1d9f81b396dd59df}\label{produtos_8h_ad7465e6c221d25ac1d9f81b396dd59df}} 
+\index{produtos.h@{produtos.h}!atualizarComponenteUnidade@{atualizarComponenteUnidade}}
+\index{atualizarComponenteUnidade@{atualizarComponenteUnidade}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{atualizarComponenteUnidade()}{atualizarComponenteUnidade()}}
+{\footnotesize\ttfamily int atualizar\+Componente\+Unidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes,  }\item[{char $\ast$}]{cod\+Mat,  }\item[{char}]{unidadenova\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar a Unidade de um componente. 
+
+vai ao componente na posiçao retornada pelo procura componente e muda a unidade para a inserida pelo utilizador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em componentes} & lista de componentes \\
+\hline
+{\em cod\+Mat} & codigo do componente \\
+\hline
+{\em unidadenova} & nova unidade\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se nao existir , 1-\/ se alterar. ~\newline
+
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_acad3c809f86af70cb6a5511ce91c130c}\label{produtos_8h_acad3c809f86af70cb6a5511ce91c130c}} 
+\index{produtos.h@{produtos.h}!atualizarProdutodimensoes@{atualizarProdutodimensoes}}
+\index{atualizarProdutodimensoes@{atualizarProdutodimensoes}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{atualizarProdutodimensoes()}{atualizarProdutodimensoes()}}
+{\footnotesize\ttfamily int atualizar\+Produtodimensoes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{char $\ast$}]{cod\+Mat,  }\item[{char}]{novasdimensoes\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualiza as dimensoes do produto. 
+
+Acede a posiçao do produto a partir da funçao procura produto , e altera as dimensoes para as novas dimensoes que o utilizador inserir
+
+
+\begin{DoxyParams}{Parameters}
+{\em produtos} & lista de produtos \\
+\hline
+{\em cod\+Mat} & Codigo do produto a procurar \\
+\hline
+{\em novasdimensoes} & Novas dimensoes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se nao existir , 1 -\/ se alterar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a1812ac6e59bfa0d85f23eb514d88e0c7}\label{produtos_8h_a1812ac6e59bfa0d85f23eb514d88e0c7}} 
+\index{produtos.h@{produtos.h}!atualizarProdutonome@{atualizarProdutonome}}
+\index{atualizarProdutonome@{atualizarProdutonome}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{atualizarProdutonome()}{atualizarProdutonome()}}
+{\footnotesize\ttfamily int atualizar\+Produtonome (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{char $\ast$}]{cod\+Mat,  }\item[{char}]{nomenovo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualiza o nome do produto. 
+
+Acede a posiçao do produto a partir da funçao procura produto , e altera o nome para o novo nome que o utilizador inserir
+
+
+\begin{DoxyParams}{Parameters}
+{\em produtos} & lista de produtos \\
+\hline
+{\em cod\+Mat} & Codigo do produto a procurar \\
+\hline
+{\em nomenovo} & Novo nome\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se nao existir , 1 -\/ se alterar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a87bf99dbfb0737191e5a6c1ef6fe7800}\label{produtos_8h_a87bf99dbfb0737191e5a6c1ef6fe7800}} 
+\index{produtos.h@{produtos.h}!atualizarProdutoPreco@{atualizarProdutoPreco}}
+\index{atualizarProdutoPreco@{atualizarProdutoPreco}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{atualizarProdutoPreco()}{atualizarProdutoPreco()}}
+{\footnotesize\ttfamily int atualizar\+Produto\+Preco (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{char $\ast$}]{cod\+Mat,  }\item[{float}]{preconovo }\end{DoxyParamCaption})}
+
+
+
+Atualiza o preco do produto. 
+
+Acede a posiçao do produto a partir da funçao procura produto , e altera o preco para o novo preco que o utilizador inserir
+
+
+\begin{DoxyParams}{Parameters}
+{\em produtos} & lista de produtos \\
+\hline
+{\em cod\+Mat} & Codigo do produto a procurar \\
+\hline
+{\em preconovo} & novo preco\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se nao existir , 1 -\/ se alterar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_aad227591fb1ef26433f74953435a585b}\label{produtos_8h_aad227591fb1ef26433f74953435a585b}} 
+\index{produtos.h@{produtos.h}!editarComposicaoQuantidade@{editarComposicaoQuantidade}}
+\index{editarComposicaoQuantidade@{editarComposicaoQuantidade}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{editarComposicaoQuantidade()}{editarComposicaoQuantidade()}}
+{\footnotesize\ttfamily void editar\+Composicao\+Quantidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{char $\ast$}]{cod\+Mat,  }\item[{int}]{numprocura,  }\item[{int}]{quantidadenova }\end{DoxyParamCaption})}
+
+
+
+Atualiza a quantidade de um componente num certo produto. 
+
+Acede a posicao do componente atraves do procura produto, e altera a quantidade para a nova quantidade inserida pelo utilizador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em produtos} & lista de produtos \\
+\hline
+{\em cod\+Mat} & cod do produto \\
+\hline
+{\em numprocura} & numero do componente \\
+\hline
+{\em quantidadenova} & nova quantidade\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_aa3f65e689a4b2369b80419d9661cc949}\label{produtos_8h_aa3f65e689a4b2369b80419d9661cc949}} 
+\index{produtos.h@{produtos.h}!inserirComponente@{inserirComponente}}
+\index{inserirComponente@{inserirComponente}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{inserirComponente()}{inserirComponente()}}
+{\footnotesize\ttfamily int inserir\+Componente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{listacomponentes,  }\item[{\mbox{\hyperlink{struct_componente}{Componente}} $\ast$}]{componente }\end{DoxyParamCaption})}
+
+
+
+Insere um componente. 
+
+Verifica senao existem componentes com o mesmo codigo , realloca memoria se necessario para a lista de componentes e insere
+
+
+\begin{DoxyParams}{Parameters}
+{\em listacomponentes} & lista de componentes \\
+\hline
+{\em componente} & material a inserir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ se ja existir , 1-\/se inserido.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a73f532dc5c9225d002510e69bc814f0f}\label{produtos_8h_a73f532dc5c9225d002510e69bc814f0f}} 
+\index{produtos.h@{produtos.h}!inserirComposicaoProduto@{inserirComposicaoProduto}}
+\index{inserirComposicaoProduto@{inserirComposicaoProduto}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{inserirComposicaoProduto()}{inserirComposicaoProduto()}}
+{\footnotesize\ttfamily int inserir\+Composicao\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produto}{Produto}} $\ast$}]{produto,  }\item[{\mbox{\hyperlink{struct_materiais}{Materiais}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+insere um componente num produto . 
+
+verifica senao existe nenhum componente com o mesmo codigo, naquele determinado produto, realloca memoria se necessario e insere
+
+
+\begin{DoxyParams}{Parameters}
+{\em produto} & produto especifico. \\
+\hline
+{\em m} & componente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/se ja existir, 1-\/ se inserido.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a2f116e9b5c2dcba6c2339d9e94fdb500}\label{produtos_8h_a2f116e9b5c2dcba6c2339d9e94fdb500}} 
+\index{produtos.h@{produtos.h}!inserirProduto@{inserirProduto}}
+\index{inserirProduto@{inserirProduto}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{inserirProduto()}{inserirProduto()}}
+{\footnotesize\ttfamily int inserir\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{listaprodutos,  }\item[{\mbox{\hyperlink{struct_produto}{Produto}} $\ast$}]{produto }\end{DoxyParamCaption})}
+
+
+
+Insere um produto. 
+
+Verifica senao existem produtos repetidos, realloca memoria se necessario e insere o produto na lista.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listaprodutos} & lista de produtos \\
+\hline
+{\em produto} & produto a inserir\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se ja existir , 1 -\/se inserido.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_ae68062cef1385f3046cd891e4e37020a}\label{produtos_8h_ae68062cef1385f3046cd891e4e37020a}} 
+\index{produtos.h@{produtos.h}!OrdenaProdutos@{OrdenaProdutos}}
+\index{OrdenaProdutos@{OrdenaProdutos}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{OrdenaProdutos()}{OrdenaProdutos()}}
+{\footnotesize\ttfamily void Ordena\+Produtos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos }\end{DoxyParamCaption})}
+
+
+
+Ordena os produtos. 
+
+verifica o preco dos produtos , chama a funçao que troca os produtos de posiçao e no final imprime a lista dos produtos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em produtos} & lista de produtos.\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a2e265315405b36e1a0917cac4bb6bf90}\label{produtos_8h_a2e265315405b36e1a0917cac4bb6bf90}} 
+\index{produtos.h@{produtos.h}!procuraComponente@{procuraComponente}}
+\index{procuraComponente@{procuraComponente}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{procuraComponente()}{procuraComponente()}}
+{\footnotesize\ttfamily void procura\+Componente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes,  }\item[{char $\ast$}]{cod,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+Procura um componente. 
+
+Compara o codigo inserido com os codigos dos componenetes na lista de produtos , e quando encontra retorna a sua posiçao
+
+
+\begin{DoxyParams}{Parameters}
+{\em listacomponentes} & lista de componentes \\
+\hline
+{\em cod} & codigo do material \\
+\hline
+{\em pos} & posiçao retornada apos procurar\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a6fcb445ef42c315bd8535957bb4dd5da}\label{produtos_8h_a6fcb445ef42c315bd8535957bb4dd5da}} 
+\index{produtos.h@{produtos.h}!procuraComposicao@{procuraComposicao}}
+\index{procuraComposicao@{procuraComposicao}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{procuraComposicao()}{procuraComposicao()}}
+{\footnotesize\ttfamily void procura\+Composicao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produto}{Produto}} $\ast$}]{produto,  }\item[{char $\ast$}]{cod,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+procura um componente num determinado produto 
+
+Compara o cofigo inserido com os codidos da lista de componentes daquele produto , e retorna a posiçao .
+
+
+\begin{DoxyParams}{Parameters}
+{\em produto} & produto especifico \\
+\hline
+{\em cod} & codigo do componente que procura \\
+\hline
+{\em pos} & posiçao retornada do componente\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a8bffa78452290e54210f07ca0ae639c4}\label{produtos_8h_a8bffa78452290e54210f07ca0ae639c4}} 
+\index{produtos.h@{produtos.h}!procuraProduto@{procuraProduto}}
+\index{procuraProduto@{procuraProduto}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{procuraProduto()}{procuraProduto()}}
+{\footnotesize\ttfamily void procura\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{char $\ast$}]{cod,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+Procura um produto. 
+
+compara o codigo inserido com o codigo na lista de produtos e retorna a posiçao dele
+
+
+\begin{DoxyParams}{Parameters}
+{\em listaprodutos} & lista de produtos \\
+\hline
+{\em cod} & codigo do produto que procura \\
+\hline
+{\em pos} & posiçao retornada\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_ad1ec7cab06d82441aa0f8c4d2b161394}\label{produtos_8h_ad1ec7cab06d82441aa0f8c4d2b161394}} 
+\index{produtos.h@{produtos.h}!registarComponente@{registarComponente}}
+\index{registarComponente@{registarComponente}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{registarComponente()}{registarComponente()}}
+{\footnotesize\ttfamily void registar\+Componente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componente}{Componente}} $\ast$}]{componente }\end{DoxyParamCaption})}
+
+
+
+Regista um componente. 
+
+Pede todos os dados do componente
+
+
+\begin{DoxyParams}{Parameters}
+{\em componente} & componente\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_aae5dccc1c4f2a59e7302d4617cb9a023}\label{produtos_8h_aae5dccc1c4f2a59e7302d4617cb9a023}} 
+\index{produtos.h@{produtos.h}!registarProduto@{registarProduto}}
+\index{registarProduto@{registarProduto}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{registarProduto()}{registarProduto()}}
+{\footnotesize\ttfamily void registar\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produto}{Produto}} $\ast$}]{produto,  }\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes,  }\item[{\mbox{\hyperlink{struct_componente}{Componente}} $\ast$}]{componente }\end{DoxyParamCaption})}
+
+
+
+Regista um produto. 
+
+Pede todos os dados do produto que quer inserir,caso nao estejam ja inseridos todos os componentes na lista de componentes permite que ele os crie durante o registo.
+
+
+\begin{DoxyParams}{Parameters}
+{\em produto} & \mbox{\hyperlink{struct_produto}{Produto}} a registar \\
+\hline
+{\em componentes} & lista de componentes existentes \\
+\hline
+{\em componente} & componente\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a9f1c5a0db4c6fabb1778d6217a6b4c1f}\label{produtos_8h_a9f1c5a0db4c6fabb1778d6217a6b4c1f}} 
+\index{produtos.h@{produtos.h}!removerComponente@{removerComponente}}
+\index{removerComponente@{removerComponente}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{removerComponente()}{removerComponente()}}
+{\footnotesize\ttfamily int remover\+Componente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes,  }\item[{char $\ast$}]{cod\+Mat }\end{DoxyParamCaption})}
+
+
+
+remove um componente 
+
+procura o componente , percorre todos os componentes e a partir da posiçao retornada pelo procura componente ele copia uma posiçao para tras todas as informaçoes do componente seguinte removendo no fim um valor ao contador .
+
+
+\begin{DoxyParams}{Parameters}
+{\em componentes} & lista de componentes \\
+\hline
+{\em cod\+Mat} & codigo do componente \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 -\/ se nao existir , 1-\/se remover.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a3180295bd9226bcc00fd2258c9fdb0d3}\label{produtos_8h_a3180295bd9226bcc00fd2258c9fdb0d3}} 
+\index{produtos.h@{produtos.h}!removerComposicao@{removerComposicao}}
+\index{removerComposicao@{removerComposicao}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{removerComposicao()}{removerComposicao()}}
+{\footnotesize\ttfamily int remover\+Composicao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{char $\ast$}]{cod\+Mat,  }\item[{int}]{numprocura }\end{DoxyParamCaption})}
+
+
+
+remove um componente de um determinado produto . 
+
+Acede a posiçao atraves do procura \mbox{\hyperlink{struct_produto}{Produto}} e copia os dados do ultimo componente do produto para a posiçao do componente que deseja remover , retirando um valor ao contador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em produtos} & lista de produtos \\
+\hline
+{\em cod\+Mat} & cod fo produto em especifico \\
+\hline
+{\em numprocura} & numero do componente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se nao existir, 1 -\/ se removido
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_ad51e8da13cf33401440e56f28ee8930a}\label{produtos_8h_ad51e8da13cf33401440e56f28ee8930a}} 
+\index{produtos.h@{produtos.h}!removerProduto@{removerProduto}}
+\index{removerProduto@{removerProduto}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{removerProduto()}{removerProduto()}}
+{\footnotesize\ttfamily int remover\+Produto (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{char $\ast$}]{cod\+Mat }\end{DoxyParamCaption})}
+
+
+
+Remove um produto. 
+
+Acede a posiçao do produto atraves da funçao procura produto ,e copia todos os dados dos produtos seguintes para a posiçao anterior a partir da posiçao daquele produto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em produtos} & lista de produtos \\
+\hline
+{\em cod\+Mat} & codigo do produto a remover\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ senao existir, 1 -\/se removido.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{produtos_8h_a01c6d8e8ea0848a6b2b0c80b8d0c33b6}\label{produtos_8h_a01c6d8e8ea0848a6b2b0c80b8d0c33b6}} 
+\index{produtos.h@{produtos.h}!trocaProdutos@{trocaProdutos}}
+\index{trocaProdutos@{trocaProdutos}!produtos.h@{produtos.h}}
+\doxysubsubsection{\texorpdfstring{trocaProdutos()}{trocaProdutos()}}
+{\footnotesize\ttfamily void troca\+Produtos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_produto}{Produto}} $\ast$}]{produto1,  }\item[{\mbox{\hyperlink{struct_produto}{Produto}} $\ast$}]{produto2 }\end{DoxyParamCaption})}
+
+
+
+Troca as posiçoes dos produtos. 
+
+troca para um temporiario o primeiro ,troca o segundo para o primeiro , e depois troca o segundo para temporario.
+
+
+\begin{DoxyParams}{Parameters}
+{\em produto1} & produto 1 \\
+\hline
+{\em produto2} & produto 2\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc 

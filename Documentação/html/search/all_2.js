@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['capacidade_0',['CAPACIDADE',['../main_8c.html#a16c4f15bc0ca6d9889881c03c9db084c',1,'main.c']]],
+  ['caratere_1',['CARATERE',['../funcoes_8h.html#a61face7eb11f7d8f1e6611b2392dfaf9',1,'funcoes.h']]],
+  ['caratere_5finvalido_2',['CARATERE_INVALIDO',['../funcoes_8h.html#a1000b81a1a87afb98453655789d69f57',1,'funcoes.h']]],
+  ['cliente_3',['Cliente',['../struct_cliente.html',1,'']]],
+  ['clientes_4',['Clientes',['../struct_clientes.html',1,'']]],
+  ['cod_5',['cod',['../structprod.html#aabb50763eedecfaa132fbcf246553a7a',1,'prod']]],
+  ['codigo_6',['codigo',['../struct_materiais.html#a53c5ff6fa6fa709e7689cb85b20b6278',1,'Materiais']]],
+  ['codmaterial_7',['codMaterial',['../struct_componente.html#af3c2f3052149ff62ad7690298e0cdf28',1,'Componente']]],
+  ['codproduto_8',['codProduto',['../struct_produto.html#a4b3c9909d954bbb6f0c4e27492e18916',1,'Produto']]],
+  ['componente_9',['Componente',['../struct_componente.html',1,'']]],
+  ['componentes_10',['Componentes',['../struct_componentes.html',1,'']]],
+  ['composicao_11',['composicao',['../struct_produto.html#a61c1b88844a3c1672982f4eec16ea132',1,'Produto']]],
+  ['contador_12',['contador',['../struct_componentes.html#a2c6a3fb7cddd9bd7254692264962b5b3',1,'Componentes']]],
+  ['contadorcomp_13',['contadorcomp',['../struct_produto.html#abef08541e922a33fcbe48ba73a7dac6e',1,'Produto']]],
+  ['contadore_14',['contadore',['../struct_encomendas.html#ac508da4490529378d2c1f7f4f894c134',1,'Encomendas']]],
+  ['contadorp_15',['contadorp',['../struct_produtos.html#ab7ff28da04ddae1323c89c06db1f7ae4',1,'Produtos']]],
+  ['contadorprode_16',['contadorprode',['../struct_encomenda.html#abf16072a13b0b1d3af48ced8f4a0e964',1,'Encomenda']]]
+];

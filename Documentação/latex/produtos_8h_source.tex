@@ -1,0 +1,50 @@
+\hypertarget{produtos_8h_source}{}\doxysection{produtos.\+h}
+\mbox{\hyperlink{produtos_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt\ to\ change\ this\ license}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/cFiles/file\_header.h\ to\ edit\ this\ template}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ File:\ \ \ produtos.h}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Author:\ Xico}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ Created\ on\ 5\ de\ janeiro\ de\ 2023,\ 16:49}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ PRODUTOS\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ PRODUTOS\_H}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structs_8h}{structs.h}}"{}}}
+\DoxyCodeLine{00016\ \textcolor{comment}{//CRUD\ DE\ COMPONENTES\ \ \ }}
+\DoxyCodeLine{00025\ \textcolor{comment}{}\textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_a2e265315405b36e1a0917cac4bb6bf90}{procuraComponente}}(\mbox{\hyperlink{struct_componentes}{Componentes}}\ *listacomponentes\ ,\textcolor{keywordtype}{char}\ *cod,\textcolor{keywordtype}{int}*pos);}
+\DoxyCodeLine{00035\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_aa3f65e689a4b2369b80419d9661cc949}{inserirComponente}}(\mbox{\hyperlink{struct_componentes}{Componentes}}\ *listacomponentes,\ \mbox{\hyperlink{struct_componente}{Componente}}\ *componente);}
+\DoxyCodeLine{00042\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_ad1ec7cab06d82441aa0f8c4d2b161394}{registarComponente}}(\mbox{\hyperlink{struct_componente}{Componente}}\ *componente);}
+\DoxyCodeLine{00054\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_a08a62a2e2a7a332012c5af7ccbb2b5a4}{atualizarComponenteDescricao}}(\mbox{\hyperlink{struct_componentes}{Componentes}}\ *componentes,\ \textcolor{keywordtype}{char}\ *codMat,\ \textcolor{keywordtype}{char}\ descricaonova[]);}
+\DoxyCodeLine{00066\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_ad7465e6c221d25ac1d9f81b396dd59df}{atualizarComponenteUnidade}}(\mbox{\hyperlink{struct_componentes}{Componentes}}\ *componentes,\ \textcolor{keywordtype}{char}\ *codMat,\ \textcolor{keywordtype}{char}\ unidadenova[]);}
+\DoxyCodeLine{00077\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_a9f1c5a0db4c6fabb1778d6217a6b4c1f}{removerComponente}}(\mbox{\hyperlink{struct_componentes}{Componentes}}\ *componentes,\ \textcolor{keywordtype}{char}*\ codMat);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00080\ \textcolor{comment}{//CRUD\ DE\ COMPONENTES\ EM\ CADA\ PRODUTO\ }}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00092\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_a73f532dc5c9225d002510e69bc814f0f}{inserirComposicaoProduto}}(\mbox{\hyperlink{struct_produto}{Produto}}\ *\ produto,\ \mbox{\hyperlink{struct_materiais}{Materiais}}\ *\ m);}
+\DoxyCodeLine{00101\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_a6fcb445ef42c315bd8535957bb4dd5da}{procuraComposicao}}(\mbox{\hyperlink{struct_produto}{Produto}}\ *produto\ ,\textcolor{keywordtype}{char}\ *cod,\ \textcolor{keywordtype}{int}\ *pos);\ }
+\DoxyCodeLine{00112\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_aad227591fb1ef26433f74953435a585b}{editarComposicaoQuantidade}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *produtos,\textcolor{keywordtype}{char}\ *codMat,\textcolor{keywordtype}{int}\ numprocura,\textcolor{keywordtype}{int}\ quantidadenova);}
+\DoxyCodeLine{00124\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_a3180295bd9226bcc00fd2258c9fdb0d3}{removerComposicao}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *produtos,\textcolor{keywordtype}{char}\ *codMat,\textcolor{keywordtype}{int}\ numprocura);}
+\DoxyCodeLine{00125\ }
+\DoxyCodeLine{00126\ }
+\DoxyCodeLine{00135\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_a8bffa78452290e54210f07ca0ae639c4}{procuraProduto}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *listaprodutos,\textcolor{keywordtype}{char}\ *cod,\textcolor{keywordtype}{int}*pos);}
+\DoxyCodeLine{00146\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_a2f116e9b5c2dcba6c2339d9e94fdb500}{inserirProduto}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *listaprodutos,\ \mbox{\hyperlink{struct_produto}{Produto}}\ *produto);}
+\DoxyCodeLine{00156\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_aae5dccc1c4f2a59e7302d4617cb9a023}{registarProduto}}(\mbox{\hyperlink{struct_produto}{Produto}}\ *produto,\mbox{\hyperlink{struct_componentes}{Componentes}}\ *componentes,\mbox{\hyperlink{struct_componente}{Componente}}\ *componente);}
+\DoxyCodeLine{00168\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_a1812ac6e59bfa0d85f23eb514d88e0c7}{atualizarProdutonome}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *produtos,\ \textcolor{keywordtype}{char}\ *codMat,\ \textcolor{keywordtype}{char}\ nomenovo[]);}
+\DoxyCodeLine{00180\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_acad3c809f86af70cb6a5511ce91c130c}{atualizarProdutodimensoes}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *produtos,\ \textcolor{keywordtype}{char}\ *codMat,\ \textcolor{keywordtype}{char}\ novasdimensoes[]);}
+\DoxyCodeLine{00192\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_a87bf99dbfb0737191e5a6c1ef6fe7800}{atualizarProdutoPreco}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *produtos,\ \textcolor{keywordtype}{char}\ *codMat,\ \textcolor{keywordtype}{float}\ preconovo);}
+\DoxyCodeLine{00203\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{produtos_8h_ad51e8da13cf33401440e56f28ee8930a}{removerProduto}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *produtos,\ \textcolor{keywordtype}{char}*\ codMat);}
+\DoxyCodeLine{00204\ }
+\DoxyCodeLine{00212\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_a01c6d8e8ea0848a6b2b0c80b8d0c33b6}{trocaProdutos}}(\mbox{\hyperlink{struct_produto}{Produto}}\ *produto1,\ \mbox{\hyperlink{struct_produto}{Produto}}\ *produto2);}
+\DoxyCodeLine{00220\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{produtos_8h_ae68062cef1385f3046cd891e4e37020a}{OrdenaProdutos}}(\mbox{\hyperlink{struct_produtos}{Produtos}}\ *produtos);}
+\DoxyCodeLine{00221\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00222\ }
+\DoxyCodeLine{00223\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ PRODUTOS\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

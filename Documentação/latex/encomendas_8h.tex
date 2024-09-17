@@ -1,0 +1,288 @@
+\hypertarget{encomendas_8h}{}\doxysection{encomendas.\+h File Reference}
+\label{encomendas_8h}\index{encomendas.h@{encomendas.h}}
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{encomendas_8h_a1781eae059dc7d25bd4351db1f1331ff}{procura\+Prod}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda, char $\ast$cod, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em procura um produto numa certa encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8h_a1a8a98ae169c0613b589f150e0b684fe}{inserir\+Produto\+Encomenda}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda, \mbox{\hyperlink{structprod}{prod}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em insere um produto numa certa encomenda \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8h_ad346a68ec5c0c28ee67f9348019f8cdd}{editar\+Produto\+Quantidade}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$idprocura, int numprocura, int quantidadenova)
+\begin{DoxyCompactList}\small\item\em alterar a quantidade de um certo produto dentro de uma certa encomenda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8h_a449c7e2b389a87afd9a79a98e2291ef2}{remover\+Prod}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$idprocura, int numprocura)
+\begin{DoxyCompactList}\small\item\em remove um produto dentro de uma encomenda \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8h_a052da4fbf89e53919b49d8194dbc5c48}{procura\+Encomenda}} (const \mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, const int $\ast$num, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em procura uma encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8h_afbaaf542a8796ca277b61fd8e83a3877}{inserir\+Encomenda}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$listaencomendas, \mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda)
+\begin{DoxyCompactList}\small\item\em insere uma encomenda \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8h_a4e9700ccb53db60907ae06b4fa60b3d2}{registar\+Encomenda}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda, \mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, \mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\begin{DoxyCompactList}\small\item\em regista uma encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8h_aee9df9f92bebd8469154fe7b5a45a69c}{atualizar\+Encomenda\+Dia}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda, int dianovo)
+\begin{DoxyCompactList}\small\item\em atualiza o dia da encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8h_a0a89366447da79119876f217584b1779}{atualizar\+Encomenda\+Mes}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda, int mesnovo)
+\begin{DoxyCompactList}\small\item\em atualiza o mes da encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8h_a8c0ccf07efeb6a886b4fb16e731c2238}{atualizar\+Encomenda\+Ano}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda, int anonovo)
+\begin{DoxyCompactList}\small\item\em atualiza o ano da encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8h_ae4f3ffedb97352c770e2ff3a60e688a1}{remover\+Encomenda}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda)
+\begin{DoxyCompactList}\small\item\em Remove uma encomenda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{encomendas_8h_a8c0ccf07efeb6a886b4fb16e731c2238}\label{encomendas_8h_a8c0ccf07efeb6a886b4fb16e731c2238}} 
+\index{encomendas.h@{encomendas.h}!atualizarEncomendaAno@{atualizarEncomendaAno}}
+\index{atualizarEncomendaAno@{atualizarEncomendaAno}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{atualizarEncomendaAno()}{atualizarEncomendaAno()}}
+{\footnotesize\ttfamily int atualizar\+Encomenda\+Ano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda,  }\item[{int}]{anonovo }\end{DoxyParamCaption})}
+
+
+
+atualiza o ano da encomenda 
+
+vai a encomenda naquela posiçao e muda o ano para o novo ano pedido ao utilizador
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em numencomenda} & numero da encomenda \\
+\hline
+{\em anonovo} & novo ano\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se a encomenda nao existir , 1 -\/ se alterar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_aee9df9f92bebd8469154fe7b5a45a69c}\label{encomendas_8h_aee9df9f92bebd8469154fe7b5a45a69c}} 
+\index{encomendas.h@{encomendas.h}!atualizarEncomendaDia@{atualizarEncomendaDia}}
+\index{atualizarEncomendaDia@{atualizarEncomendaDia}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{atualizarEncomendaDia()}{atualizarEncomendaDia()}}
+{\footnotesize\ttfamily int atualizar\+Encomenda\+Dia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda,  }\item[{int}]{dianovo }\end{DoxyParamCaption})}
+
+
+
+atualiza o dia da encomenda 
+
+vai a encomenda naquela posiçao e muda o dia para o novo dia pedido ao utilizador
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em numencomenda} & numero da encomenda \\
+\hline
+{\em dianovo} & dia novo\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se a encomenda nao existir , 1 -\/ se alterar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_a0a89366447da79119876f217584b1779}\label{encomendas_8h_a0a89366447da79119876f217584b1779}} 
+\index{encomendas.h@{encomendas.h}!atualizarEncomendaMes@{atualizarEncomendaMes}}
+\index{atualizarEncomendaMes@{atualizarEncomendaMes}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{atualizarEncomendaMes()}{atualizarEncomendaMes()}}
+{\footnotesize\ttfamily int atualizar\+Encomenda\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda,  }\item[{int}]{mesnovo }\end{DoxyParamCaption})}
+
+
+
+atualiza o mes da encomenda 
+
+vai a encomenda naquela posiçao e muda o mes para o novo mes pedido ao utilizador
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em numencomenda} & numero da encomenda \\
+\hline
+{\em mesnovo} & novo mes\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/ se a encomenda nao existir , 1 -\/ se alterar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_ad346a68ec5c0c28ee67f9348019f8cdd}\label{encomendas_8h_ad346a68ec5c0c28ee67f9348019f8cdd}} 
+\index{encomendas.h@{encomendas.h}!editarProdutoQuantidade@{editarProdutoQuantidade}}
+\index{editarProdutoQuantidade@{editarProdutoQuantidade}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{editarProdutoQuantidade()}{editarProdutoQuantidade()}}
+{\footnotesize\ttfamily void editar\+Produto\+Quantidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{idprocura,  }\item[{int}]{numprocura,  }\item[{int}]{quantidadenova }\end{DoxyParamCaption})}
+
+
+
+alterar a quantidade de um certo produto dentro de uma certa encomenda. 
+
+vai a encomenda naquela posiçao e altera a quantidade do produto naquela posiçao .
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em idprocura} & o numero da encomenda \\
+\hline
+{\em numprocura} & o numerdo do produto dentro da encomenda \\
+\hline
+{\em quantidadenova} & a nova quantidade\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_afbaaf542a8796ca277b61fd8e83a3877}\label{encomendas_8h_afbaaf542a8796ca277b61fd8e83a3877}} 
+\index{encomendas.h@{encomendas.h}!inserirEncomenda@{inserirEncomenda}}
+\index{inserirEncomenda@{inserirEncomenda}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{inserirEncomenda()}{inserirEncomenda()}}
+{\footnotesize\ttfamily int inserir\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{listaencomendas,  }\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda }\end{DoxyParamCaption})}
+
+
+
+insere uma encomenda 
+
+verifica senao existem repetidas , realloca memoria se necessario e insere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em listaencomendas} & lista de encomendas \\
+\hline
+{\em encomenda} & encomenda a inserir\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0-\/se ja existir alguma encomenda com aquele codigo, 1-\/ se inserir.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_a1a8a98ae169c0613b589f150e0b684fe}\label{encomendas_8h_a1a8a98ae169c0613b589f150e0b684fe}} 
+\index{encomendas.h@{encomendas.h}!inserirProdutoEncomenda@{inserirProdutoEncomenda}}
+\index{inserirProdutoEncomenda@{inserirProdutoEncomenda}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{inserirProdutoEncomenda()}{inserirProdutoEncomenda()}}
+{\footnotesize\ttfamily int inserir\+Produto\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda,  }\item[{\mbox{\hyperlink{structprod}{prod}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+insere um produto numa certa encomenda 
+
+verifica senao existem repetidos , realloca memoria se necessario e insere.
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomenda} & encomenda especifica. \\
+\hline
+{\em m} & produto na encomenda.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se ja existir , 1 se for inserido.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_a052da4fbf89e53919b49d8194dbc5c48}\label{encomendas_8h_a052da4fbf89e53919b49d8194dbc5c48}} 
+\index{encomendas.h@{encomendas.h}!procuraEncomenda@{procuraEncomenda}}
+\index{procuraEncomenda@{procuraEncomenda}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{procuraEncomenda()}{procuraEncomenda()}}
+{\footnotesize\ttfamily void procura\+Encomenda (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{const int $\ast$}]{num,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+procura uma encomenda 
+
+verifica senao existe nenhuma encomenda com o mesmo numero naquela lista de encomendas.
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em num} & numero da encomenda \\
+\hline
+{\em pos} & retorna a posicao da encomenda na lista\\
+\hline
+\end{DoxyParams}
+Procura encomenda
+
+Compara o codigo inserido com os codigos da lista de encomendas e quando encontra um igual retorna a posiçao .
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em num} & num da encomenda \\
+\hline
+{\em pos} & posiçao retornada\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_a1781eae059dc7d25bd4351db1f1331ff}\label{encomendas_8h_a1781eae059dc7d25bd4351db1f1331ff}} 
+\index{encomendas.h@{encomendas.h}!procuraProd@{procuraProd}}
+\index{procuraProd@{procuraProd}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{procuraProd()}{procuraProd()}}
+{\footnotesize\ttfamily void procura\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda,  }\item[{char $\ast$}]{cod,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+procura um produto numa certa encomenda 
+
+Compara o codigo inserido com os codigos da lista de produtos daquela encomenda em especifico e quando encontra um igual devolve a sua posiçao .
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomenda} & uma encomenda especifica \\
+\hline
+{\em cod} & codigo do produto \\
+\hline
+{\em pos} & posiçao retornada\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_a4e9700ccb53db60907ae06b4fa60b3d2}\label{encomendas_8h_a4e9700ccb53db60907ae06b4fa60b3d2}} 
+\index{encomendas.h@{encomendas.h}!registarEncomenda@{registarEncomenda}}
+\index{registarEncomenda@{registarEncomenda}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{registarEncomenda()}{registarEncomenda()}}
+{\footnotesize\ttfamily void registar\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda,  }\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+
+regista uma encomenda 
+
+Pede todos os dados da encomenda e dos produtos inseridos nela, adicionando uma encomenda ao id do cliente. 
+\begin{DoxyParams}{Parameters}
+{\em encomenda} & encomenda a ser criada \\
+\hline
+{\em produtos} & lista de produtos existentes \\
+\hline
+{\em clientes} & a lista de clientes\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_ae4f3ffedb97352c770e2ff3a60e688a1}\label{encomendas_8h_ae4f3ffedb97352c770e2ff3a60e688a1}} 
+\index{encomendas.h@{encomendas.h}!removerEncomenda@{removerEncomenda}}
+\index{removerEncomenda@{removerEncomenda}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{removerEncomenda()}{removerEncomenda()}}
+{\footnotesize\ttfamily int remover\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda }\end{DoxyParamCaption})}
+
+
+
+Remove uma encomenda. 
+
+vai a posiçao da encomenda que e devolvida pela funçao procura encomenda, copia todas as encomendas uma posiçao para pras a partir daquela posiçao e remove um valor no contador
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em numencomenda} & numero da encomenda\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se nao existir a encomenda, 1-\/ se remover.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8h_a449c7e2b389a87afd9a79a98e2291ef2}\label{encomendas_8h_a449c7e2b389a87afd9a79a98e2291ef2}} 
+\index{encomendas.h@{encomendas.h}!removerProd@{removerProd}}
+\index{removerProd@{removerProd}!encomendas.h@{encomendas.h}}
+\doxysubsubsection{\texorpdfstring{removerProd()}{removerProd()}}
+{\footnotesize\ttfamily void remover\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{idprocura,  }\item[{int}]{numprocura }\end{DoxyParamCaption})}
+
+
+
+remove um produto dentro de uma encomenda 
+
+vai a encomenda na posiçao devolvida pela funçao de procurar encomenda , ao produto na posicao escolhida e copia o ultimo produto para aquele local , no fim retira 1 valor ao contador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & lista de encomendas \\
+\hline
+{\em idprocura} & o numero da encomenda que procura \\
+\hline
+{\em numprocura} & o numero do produto dentro da encomenda\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc 

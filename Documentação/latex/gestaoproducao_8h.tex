@@ -1,0 +1,34 @@
+\hypertarget{gestaoproducao_8h}{}\doxysection{gestaoproducao.\+h File Reference}
+\label{gestaoproducao_8h}\index{gestaoproducao.h@{gestaoproducao.h}}
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{gestaoproducao_8h_ae5ecd06f204d8f82ce25365554088f87}{gestao\+Producao}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, \mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, \mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$componentes)
+\begin{DoxyCompactList}\small\item\em Esta funçao serve para gerir a produçao de uma semana. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{gestaoproducao_8h_ae5ecd06f204d8f82ce25365554088f87}\label{gestaoproducao_8h_ae5ecd06f204d8f82ce25365554088f87}} 
+\index{gestaoproducao.h@{gestaoproducao.h}!gestaoProducao@{gestaoProducao}}
+\index{gestaoProducao@{gestaoProducao}!gestaoproducao.h@{gestaoproducao.h}}
+\doxysubsubsection{\texorpdfstring{gestaoProducao()}{gestaoProducao()}}
+{\footnotesize\ttfamily void gestao\+Producao (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{\mbox{\hyperlink{struct_componentes}{Componentes}} $\ast$}]{componentes }\end{DoxyParamCaption})}
+
+
+
+Esta funçao serve para gerir a produçao de uma semana. 
+
+Primeiro inserimos a data onde começa a semana , a funçao verifica se a data nao e maior que as inseridas nas encomendas depois compara o cod do produto na lista de produtos com o cod do produto inserido na encomenda , de seguida compara o cod do material que o produto usa ~\newline
+ com o cod do material existente na lista de materiais imprimindo assim o seu codigo,descriçao,unidade e a quantidade multiplicando a quantidade de material que o produto usa com a quantidade pedida daquele tipo de produto.
+
+
+\begin{DoxyParams}{Parameters}
+{\em encomendas} & struct encomendas \\
+\hline
+{\em produtos} & struct produtos \\
+\hline
+{\em componentes} & struct produtos\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc 

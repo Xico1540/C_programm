@@ -1,0 +1,609 @@
+\hypertarget{funcoes_8h}{}\doxysection{funcoes.\+h File Reference}
+\label{funcoes_8h}\index{funcoes.h@{funcoes.h}}
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{funcoes_8h_ac1478489eb22e07328b9dbcbbe8cc3ac}{LER\+\_\+\+UTILIZADOR}}~\char`\"{} -\/-\/-\/-\/ Bem vindo á Moveis para Todos -\/-\/-\/-\/-\/ \textbackslash{}n Qual o seu tipo de utilizador\+:\textbackslash{}n -\/1-\/Admin-\/\textbackslash{}n -\/2-\/Cliente\textbackslash{}n -\/3-\/Funcionario\textbackslash{}n-\/\+:\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que LER\+\_\+\+UTILIZADOR vai ser a mensagem escrita a frente. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a3c720ff299520a5ede03c7c6520315b3}{VALOR\+\_\+\+MAX\+\_\+\+USERS}}~3
+\begin{DoxyCompactList}\small\item\em Define o valor maximo possivel no menu para escolher o tipo de utilizador. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a4d0186d8c0fe9810f9d60a1d30b36a98}{VALOR\+\_\+\+MIN\+\_\+\+USERS}}~1
+\begin{DoxyCompactList}\small\item\em Define o valor minimo possivel no menu para escolher o tipo de utilizador. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a5804b02742185bd819dbeecc99b9f255}{VALOR\+\_\+\+MAX\+\_\+\+ADMIN}}~3
+\begin{DoxyCompactList}\small\item\em Define o valor maximo possivel no menu de admin para escolher o que pretender gerir na empresa. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a1209e04fa3e3f19824ab1f2f792b0664}{VALOR\+\_\+\+MIN\+\_\+\+ADMIN}}~0
+\begin{DoxyCompactList}\small\item\em Define o valor minimo possivel no menu de admin para escolher o que pretender gerir na empresa. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_ad176a93cbcca6f4673606d2a0859ec99}{ADMIN\+\_\+\+MENU}}~\char`\"{}Bem vindo administrador, o que pretende fazer na \+:\textbackslash{}n1 -\/ Gestao de clientes \textbackslash{}n2 -\/ Gestao de \mbox{\hyperlink{struct_produtos}{Produtos}} \textbackslash{}n3 -\/ Gestao de Producao\textbackslash{}n0 -\/ Voltar\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que ADMIN\+\_\+\+MENU vai ser a mensagem para perguntar o tipo de gestao que o admin prentende fazer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_aa56c91db036083c1938b6d060eade84c}{GESTAO\+\_\+\+CLIENTE}}~\char`\"{}-\/-\/-\/-\/Gestao de clientes-\/-\/-\/-\/ \textbackslash{}n Pretende\+:\textbackslash{}n0-\/ voltar\textbackslash{}n1 -\/ Criar novo cliente\textbackslash{}n2 -\/ Editar cliente\textbackslash{}n3 -\/ Remover cliente\textbackslash{}n4 -\/ Imprimir lista de clientes\textbackslash{}n5 -\/ Ordenar clientes por ordem decrescente de encomendas\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que GESTAO\+\_\+\+CLIENTE vai ser a mensagem para perguntao ao admin o que pretende gerir nos clientes. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a65faf2bc218886b03ba130383a842f62}{VALOR\+\_\+\+MAX\+\_\+\+GERIRCLIENTEMENU}}~5
+\begin{DoxyCompactList}\small\item\em Define o valor maximo possivel no menu de gestao de clientes para permitir ao admin escolher o que pretender gerir em relacao a clientes. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a446d7ef3ca9361521b1ead22aa339bf9}{VALOR\+\_\+\+MIN\+\_\+\+GERIRCLIENTEMENU}}~0
+\begin{DoxyCompactList}\small\item\em Define o valor minimo possivel no menu de gestao de clientes para permitir ao admin escolher o que pretender gerir em relacao a clientes. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_ac8eac4638db6fd1204ff812bdedd34aa}{GESTAO\+\_\+\+PRODUTOS}}~\char`\"{}-\/-\/-\/-\/-\/Gestao de \mbox{\hyperlink{struct_produtos}{Produtos}}-\/-\/-\/-\/\textbackslash{}n Pretende para a gestao dos produtos\+:\textbackslash{}n0-\/voltar\textbackslash{}n1 -\/ Criar um material \textbackslash{}n2 -\/ Editar um material\textbackslash{}n3 -\/ Remover material\textbackslash{}n4 -\/ Listar materiais\textbackslash{}n5 -\/ Criar produto\textbackslash{}n6 -\/ Editar produto\textbackslash{}n7 -\/ Remover produto\textbackslash{}n8 -\/ Listar produtos\textbackslash{}n9 -\/ Ordenar produtos por preço descendente\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que GESTAO\+\_\+\+PRODUTOS vai ser a mensagem para perguntao ao admin o que pretende gerir nos \mbox{\hyperlink{struct_produtos}{Produtos}}. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a778a1b7dd8c43ca73baea631f8615619}{VALOR\+\_\+\+MAX\+\_\+\+GERIRPRODUTO}}~9
+\begin{DoxyCompactList}\small\item\em Define o valor maximo possivel no menu de gestao de produtos para permitir ao admin escolher o que pretender gerir em relacao aos produtos. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a73d7aa3a359b286b462bcdc0817d98f1}{VALOR\+\_\+\+MIN\+\_\+\+GERIRPRODUTO}}~0
+\begin{DoxyCompactList}\small\item\em Define o valor minimo possivel no menu de gestao de produtos para permitir ao admin escolher o que pretender gerir em relacao aos produtos. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_ac11477eb2368a56ade83965756c51207}{VALOR\+\_\+\+MAX\+\_\+\+CLIENTE}}~2
+\begin{DoxyCompactList}\small\item\em Define o valor maximo possivel no menu de cliente para escolher o que pretende fazer na empresa. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a72cb6f2bdf00083a3d8f493fda8919b4}{VALOR\+\_\+\+MIN\+\_\+\+CLIENTE}}~0
+\begin{DoxyCompactList}\small\item\em Define o valor minimo possivel no menu de cliente para escolher o que pretende fazer na empresa. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_afbaa783a1f14915c906255a0bdcc1cda}{MENU\+\_\+\+CLIENTE}}~\char`\"{}Bem vindo \mbox{\hyperlink{struct_cliente}{Cliente}}, o que procura \+:\textbackslash{}n1 -\/Gerir cliente\textbackslash{}n2-\/Encomendas\textbackslash{}n0 -\/Voltar\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que o MENU\+\_\+\+CLIENTE vai ser a mensagem para perguntar ao cliente o que ele pretende fazer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_adda836589f5b269d24cf7b6141a3ee10}{VALOR\+\_\+\+MAX\+\_\+\+GERIRCLIENTE}}~3
+\begin{DoxyCompactList}\small\item\em Define o valor maximo possivel no menu de cliente para escolher o que pretende fazer em relaçao aos seus dados de cliente. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a33c1506062fc673a6eb656881e13ddf7}{VALOR\+\_\+\+MIN\+\_\+\+GERIRCLIENTE}}~0
+\begin{DoxyCompactList}\small\item\em Define o valor minimo possivel no menu de cliente para escolher o que pretende fazer em relaçao aos seus dados de cliente. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a9184f32b45b94165a254a2f3fd9a94c0}{GERIR\+\_\+\+CLIENTE}}~\char`\"{}-\/-\/-\/-\/Gerir cliente-\/-\/-\/-\/ \textbackslash{}n Deseja\+:\textbackslash{}n0-\/voltar\textbackslash{}n1 -\/ Registar-\/me como novo cliente\textbackslash{}n2 -\/ Editar os meus dados pessoais \textbackslash{}n3 -\/ Remover me da lista de clientes\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que o GERIR\+\_\+\+CLIENTE vai ser a mensagem para perguntar ao cliente o que ele pretende fazer em relaçao aos seus dados de cliente.. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a91ba0cdaacc6118e3cc0b54e752c0b58}{VALOR\+\_\+\+MAX\+\_\+\+ENCOMENDAS}}~4
+\begin{DoxyCompactList}\small\item\em Define o valor maxmimo possivel no menu de encomendas para escolher o que pretende fazer em relaçao a encomendas. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_ad6d09a19616285a9d9d48306c6802572}{VALOR\+\_\+\+MIN\+\_\+\+ENCOMENDAS}}~0
+\begin{DoxyCompactList}\small\item\em Define o valor maxmimo possivel no menu de encomendas para escolher o que pretende fazer em relaçao a encomendas. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a7cb0b9ff52a3851f5f4ae27f21d9554d}{ENCOMENDAS}}~\char`\"{}-\/-\/-\/-\/-\/Encomendas-\/-\/-\/-\/ \textbackslash{}n Escolha a opcao relativa a sua encomenda\+:\textbackslash{}n0-\/voltar\textbackslash{}n1 -\/ Registar encomenda\textbackslash{}n2 -\/ Alterar encomenda\textbackslash{}n3 -\/ Eleminar encomenda\textbackslash{}n4-\/ Listar encomendas\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que o ENCOMENDAS vai ser a mensagem para perguntar ao cliente o que ele pretende fazer na aba encomendas. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_ab639564c99a760096f84e5a338840e27}{VALOR\+\_\+\+MIN\+\_\+\+FUN}}~0
+\begin{DoxyCompactList}\small\item\em Define o valor minimo possivel no menu do funcionario para escolher o que pretende fazer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_aeb8ce0f9e43d94187ba8eec4811364e2}{VALOR\+\_\+\+MAX\+\_\+\+FUN}}~4
+\begin{DoxyCompactList}\small\item\em Define o valor maximo possivel no menu do funcionario para escolher o que pretende fazer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a4ee9d905f5e4060d48c01d895a5c3493}{FUNCIONARIO}}~\char`\"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Bem vindo Funcionario -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\textbackslash{}n O que pretende fazer \+:\textbackslash{}n0 -\/ Voltar\textbackslash{}n1 -\/ Dar entrada ou saida\textbackslash{}n2 -\/ Ver lista de produtos\textbackslash{}n3 -\/ Ver lista de componentes\textbackslash{}n4 -\/ Ver lista de encomendas\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que o FUNCIONARIO vai ser a mensagem para perguntar ao funcionario o que ele pretende fazer. \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a61face7eb11f7d8f1e6611b2392dfaf9}{CARATERE}}~\char`\"{}Pretende continuar na aplicacao digite n-\/nao ,s-\/sim\+:\textbackslash{}n-\/\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que CARATERE é a mensagem para perguntar se o utilizador continua na aplicaçao . \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a7dac90953bf2709d6153d7503fe3c77e}{VALOR\+\_\+\+INVALIDO}}~\char`\"{}O valor inserido é inválido, digite um valor válido.\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que VALOR\+\_\+\+INVALIDO é a mensagem que informa que inseriu um valor invalido . \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{funcoes_8h_a1000b81a1a87afb98453655789d69f57}{CARATERE\+\_\+\+INVALIDO}}~\char`\"{}Caratere inserido é invalido,digite um caratere correto.\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Define que CARATERE\+\_\+\+INVALIDO é a mensagem que informa que inseriu um caratere unvalido . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funcoes_8h_a6c6ae5af6f6967e5bc20f4c41d0c4f2f}{limpa\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Limpa o Buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8h_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obter\+Int}} (int min\+Valor, int max\+Valor, char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Obter um numero Inteiro. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{funcoes_8h_a82fa1a337f56c183c86e0aab094a7ef5}{obter\+Caratere}} (char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Ler um caratere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8h_ae60bd50811a283b49bd7dbbc8e57a1c7}{procura\+Cliente}} (const \mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$listacliente, const int $\ast$num, int $\ast$pos)
+\item 
+int \mbox{\hyperlink{funcoes_8h_a82f2350774875f5499fc9dbd131f6fbe}{inserir\+Cliente}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$listacliente, \mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente)
+\begin{DoxyCompactList}\small\item\em Insere um cliente na lista . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8h_adc90bdab0c0ec70baeffa0aff92a2c81}{registar\+Cliente}} (\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente)
+\begin{DoxyCompactList}\small\item\em Guarda e regista os dados do cliente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8h_a3266471bed6047a97a9d167eba6d622e}{remover\+Cliente}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente)
+\begin{DoxyCompactList}\small\item\em Remove o cliente da lista ou muda o seu estado para inativo . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8h_a957b4df5099b6f652d70182bb01502cc}{atualizar\+Cliente\+Nif}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, int nifnovo)
+\begin{DoxyCompactList}\small\item\em Atualizar o nif do cliente . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8h_a04e9031df81ed81da87f1952f43fac6d}{atualizar\+Cliente\+Nome}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, char nomenovo\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar o nome do cliente . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8h_abb6900ddab7ada9cccaca2a9ac15ff8a}{atualizar\+Cliente\+Pais}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, char paisnovo\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar o pais do cliente . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8h_a516d5dfcb7d682c6e74be274d1e1d0a3}{atualizar\+Cliente\+Morada}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, char moradanova\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar a morada do cliente . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8h_ae739794f40abd6ae9f4c9f967c2f48eb}{troca\+Clientes}} (\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente1, \mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente2)
+\begin{DoxyCompactList}\small\item\em ordena os clientes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8h_a8c74537be79f44a226c780b918e0a99f}{Ordena\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\begin{DoxyCompactList}\small\item\em ordena e imprime \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{funcoes_8h_ad176a93cbcca6f4673606d2a0859ec99}\label{funcoes_8h_ad176a93cbcca6f4673606d2a0859ec99}} 
+\index{funcoes.h@{funcoes.h}!ADMIN\_MENU@{ADMIN\_MENU}}
+\index{ADMIN\_MENU@{ADMIN\_MENU}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{ADMIN\_MENU}{ADMIN\_MENU}}
+{\footnotesize\ttfamily \#define ADMIN\+\_\+\+MENU~\char`\"{}Bem vindo administrador, o que pretende fazer na \+:\textbackslash{}n1 -\/ Gestao de clientes \textbackslash{}n2 -\/ Gestao de \mbox{\hyperlink{struct_produtos}{Produtos}} \textbackslash{}n3 -\/ Gestao de Producao\textbackslash{}n0 -\/ Voltar\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que ADMIN\+\_\+\+MENU vai ser a mensagem para perguntar o tipo de gestao que o admin prentende fazer. 
+
+\mbox{\Hypertarget{funcoes_8h_a61face7eb11f7d8f1e6611b2392dfaf9}\label{funcoes_8h_a61face7eb11f7d8f1e6611b2392dfaf9}} 
+\index{funcoes.h@{funcoes.h}!CARATERE@{CARATERE}}
+\index{CARATERE@{CARATERE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{CARATERE}{CARATERE}}
+{\footnotesize\ttfamily \#define CARATERE~\char`\"{}Pretende continuar na aplicacao digite n-\/nao ,s-\/sim\+:\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que CARATERE é a mensagem para perguntar se o utilizador continua na aplicaçao . 
+
+\mbox{\Hypertarget{funcoes_8h_a1000b81a1a87afb98453655789d69f57}\label{funcoes_8h_a1000b81a1a87afb98453655789d69f57}} 
+\index{funcoes.h@{funcoes.h}!CARATERE\_INVALIDO@{CARATERE\_INVALIDO}}
+\index{CARATERE\_INVALIDO@{CARATERE\_INVALIDO}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{CARATERE\_INVALIDO}{CARATERE\_INVALIDO}}
+{\footnotesize\ttfamily \#define CARATERE\+\_\+\+INVALIDO~\char`\"{}Caratere inserido é invalido,digite um caratere correto.\textbackslash{}n\char`\"{}}
+
+
+
+Define que CARATERE\+\_\+\+INVALIDO é a mensagem que informa que inseriu um caratere unvalido . 
+
+\mbox{\Hypertarget{funcoes_8h_a7cb0b9ff52a3851f5f4ae27f21d9554d}\label{funcoes_8h_a7cb0b9ff52a3851f5f4ae27f21d9554d}} 
+\index{funcoes.h@{funcoes.h}!ENCOMENDAS@{ENCOMENDAS}}
+\index{ENCOMENDAS@{ENCOMENDAS}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{ENCOMENDAS}{ENCOMENDAS}}
+{\footnotesize\ttfamily \#define ENCOMENDAS~\char`\"{}-\/-\/-\/-\/-\/Encomendas-\/-\/-\/-\/ \textbackslash{}n Escolha a opcao relativa a sua encomenda\+:\textbackslash{}n0-\/voltar\textbackslash{}n1 -\/ Registar encomenda\textbackslash{}n2 -\/ Alterar encomenda\textbackslash{}n3 -\/ Eleminar encomenda\textbackslash{}n4-\/ Listar encomendas\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que o ENCOMENDAS vai ser a mensagem para perguntar ao cliente o que ele pretende fazer na aba encomendas. 
+
+\mbox{\Hypertarget{funcoes_8h_a4ee9d905f5e4060d48c01d895a5c3493}\label{funcoes_8h_a4ee9d905f5e4060d48c01d895a5c3493}} 
+\index{funcoes.h@{funcoes.h}!FUNCIONARIO@{FUNCIONARIO}}
+\index{FUNCIONARIO@{FUNCIONARIO}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{FUNCIONARIO}{FUNCIONARIO}}
+{\footnotesize\ttfamily \#define FUNCIONARIO~\char`\"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Bem vindo Funcionario -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\textbackslash{}n O que pretende fazer \+:\textbackslash{}n0 -\/ Voltar\textbackslash{}n1 -\/ Dar entrada ou saida\textbackslash{}n2 -\/ Ver lista de produtos\textbackslash{}n3 -\/ Ver lista de componentes\textbackslash{}n4 -\/ Ver lista de encomendas\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que o FUNCIONARIO vai ser a mensagem para perguntar ao funcionario o que ele pretende fazer. 
+
+\mbox{\Hypertarget{funcoes_8h_a9184f32b45b94165a254a2f3fd9a94c0}\label{funcoes_8h_a9184f32b45b94165a254a2f3fd9a94c0}} 
+\index{funcoes.h@{funcoes.h}!GERIR\_CLIENTE@{GERIR\_CLIENTE}}
+\index{GERIR\_CLIENTE@{GERIR\_CLIENTE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{GERIR\_CLIENTE}{GERIR\_CLIENTE}}
+{\footnotesize\ttfamily \#define GERIR\+\_\+\+CLIENTE~\char`\"{}-\/-\/-\/-\/Gerir cliente-\/-\/-\/-\/ \textbackslash{}n Deseja\+:\textbackslash{}n0-\/voltar\textbackslash{}n1 -\/ Registar-\/me como novo cliente\textbackslash{}n2 -\/ Editar os meus dados pessoais \textbackslash{}n3 -\/ Remover me da lista de clientes\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que o GERIR\+\_\+\+CLIENTE vai ser a mensagem para perguntar ao cliente o que ele pretende fazer em relaçao aos seus dados de cliente.. 
+
+\mbox{\Hypertarget{funcoes_8h_aa56c91db036083c1938b6d060eade84c}\label{funcoes_8h_aa56c91db036083c1938b6d060eade84c}} 
+\index{funcoes.h@{funcoes.h}!GESTAO\_CLIENTE@{GESTAO\_CLIENTE}}
+\index{GESTAO\_CLIENTE@{GESTAO\_CLIENTE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{GESTAO\_CLIENTE}{GESTAO\_CLIENTE}}
+{\footnotesize\ttfamily \#define GESTAO\+\_\+\+CLIENTE~\char`\"{}-\/-\/-\/-\/Gestao de clientes-\/-\/-\/-\/ \textbackslash{}n Pretende\+:\textbackslash{}n0-\/ voltar\textbackslash{}n1 -\/ Criar novo cliente\textbackslash{}n2 -\/ Editar cliente\textbackslash{}n3 -\/ Remover cliente\textbackslash{}n4 -\/ Imprimir lista de clientes\textbackslash{}n5 -\/ Ordenar clientes por ordem decrescente de encomendas\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que GESTAO\+\_\+\+CLIENTE vai ser a mensagem para perguntao ao admin o que pretende gerir nos clientes. 
+
+\mbox{\Hypertarget{funcoes_8h_ac8eac4638db6fd1204ff812bdedd34aa}\label{funcoes_8h_ac8eac4638db6fd1204ff812bdedd34aa}} 
+\index{funcoes.h@{funcoes.h}!GESTAO\_PRODUTOS@{GESTAO\_PRODUTOS}}
+\index{GESTAO\_PRODUTOS@{GESTAO\_PRODUTOS}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{GESTAO\_PRODUTOS}{GESTAO\_PRODUTOS}}
+{\footnotesize\ttfamily \#define GESTAO\+\_\+\+PRODUTOS~\char`\"{}-\/-\/-\/-\/-\/Gestao de \mbox{\hyperlink{struct_produtos}{Produtos}}-\/-\/-\/-\/\textbackslash{}n Pretende para a gestao dos produtos\+:\textbackslash{}n0-\/voltar\textbackslash{}n1 -\/ Criar um material \textbackslash{}n2 -\/ Editar um material\textbackslash{}n3 -\/ Remover material\textbackslash{}n4 -\/ Listar materiais\textbackslash{}n5 -\/ Criar produto\textbackslash{}n6 -\/ Editar produto\textbackslash{}n7 -\/ Remover produto\textbackslash{}n8 -\/ Listar produtos\textbackslash{}n9 -\/ Ordenar produtos por preço descendente\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que GESTAO\+\_\+\+PRODUTOS vai ser a mensagem para perguntao ao admin o que pretende gerir nos \mbox{\hyperlink{struct_produtos}{Produtos}}. 
+
+\mbox{\Hypertarget{funcoes_8h_ac1478489eb22e07328b9dbcbbe8cc3ac}\label{funcoes_8h_ac1478489eb22e07328b9dbcbbe8cc3ac}} 
+\index{funcoes.h@{funcoes.h}!LER\_UTILIZADOR@{LER\_UTILIZADOR}}
+\index{LER\_UTILIZADOR@{LER\_UTILIZADOR}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{LER\_UTILIZADOR}{LER\_UTILIZADOR}}
+{\footnotesize\ttfamily \#define LER\+\_\+\+UTILIZADOR~\char`\"{} -\/-\/-\/-\/ Bem vindo á Moveis para Todos -\/-\/-\/-\/-\/ \textbackslash{}n Qual o seu tipo de utilizador\+:\textbackslash{}n -\/1-\/Admin-\/\textbackslash{}n -\/2-\/Cliente\textbackslash{}n -\/3-\/Funcionario\textbackslash{}n-\/\+:\char`\"{}}
+
+
+
+Define que LER\+\_\+\+UTILIZADOR vai ser a mensagem escrita a frente. 
+
+\mbox{\Hypertarget{funcoes_8h_afbaa783a1f14915c906255a0bdcc1cda}\label{funcoes_8h_afbaa783a1f14915c906255a0bdcc1cda}} 
+\index{funcoes.h@{funcoes.h}!MENU\_CLIENTE@{MENU\_CLIENTE}}
+\index{MENU\_CLIENTE@{MENU\_CLIENTE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{MENU\_CLIENTE}{MENU\_CLIENTE}}
+{\footnotesize\ttfamily \#define MENU\+\_\+\+CLIENTE~\char`\"{}Bem vindo \mbox{\hyperlink{struct_cliente}{Cliente}}, o que procura \+:\textbackslash{}n1 -\/Gerir cliente\textbackslash{}n2-\/Encomendas\textbackslash{}n0 -\/Voltar\textbackslash{}n-\/\char`\"{}}
+
+
+
+Define que o MENU\+\_\+\+CLIENTE vai ser a mensagem para perguntar ao cliente o que ele pretende fazer. 
+
+\mbox{\Hypertarget{funcoes_8h_a7dac90953bf2709d6153d7503fe3c77e}\label{funcoes_8h_a7dac90953bf2709d6153d7503fe3c77e}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_INVALIDO@{VALOR\_INVALIDO}}
+\index{VALOR\_INVALIDO@{VALOR\_INVALIDO}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_INVALIDO}{VALOR\_INVALIDO}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+INVALIDO~\char`\"{}O valor inserido é inválido, digite um valor válido.\textbackslash{}n\char`\"{}}
+
+
+
+Define que VALOR\+\_\+\+INVALIDO é a mensagem que informa que inseriu um valor invalido . 
+
+\mbox{\Hypertarget{funcoes_8h_a5804b02742185bd819dbeecc99b9f255}\label{funcoes_8h_a5804b02742185bd819dbeecc99b9f255}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_ADMIN@{VALOR\_MAX\_ADMIN}}
+\index{VALOR\_MAX\_ADMIN@{VALOR\_MAX\_ADMIN}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_ADMIN}{VALOR\_MAX\_ADMIN}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+ADMIN~3}
+
+
+
+Define o valor maximo possivel no menu de admin para escolher o que pretender gerir na empresa. 
+
+\mbox{\Hypertarget{funcoes_8h_ac11477eb2368a56ade83965756c51207}\label{funcoes_8h_ac11477eb2368a56ade83965756c51207}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_CLIENTE@{VALOR\_MAX\_CLIENTE}}
+\index{VALOR\_MAX\_CLIENTE@{VALOR\_MAX\_CLIENTE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_CLIENTE}{VALOR\_MAX\_CLIENTE}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+CLIENTE~2}
+
+
+
+Define o valor maximo possivel no menu de cliente para escolher o que pretende fazer na empresa. 
+
+\mbox{\Hypertarget{funcoes_8h_a91ba0cdaacc6118e3cc0b54e752c0b58}\label{funcoes_8h_a91ba0cdaacc6118e3cc0b54e752c0b58}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_ENCOMENDAS@{VALOR\_MAX\_ENCOMENDAS}}
+\index{VALOR\_MAX\_ENCOMENDAS@{VALOR\_MAX\_ENCOMENDAS}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_ENCOMENDAS}{VALOR\_MAX\_ENCOMENDAS}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+ENCOMENDAS~4}
+
+
+
+Define o valor maxmimo possivel no menu de encomendas para escolher o que pretende fazer em relaçao a encomendas. 
+
+\mbox{\Hypertarget{funcoes_8h_aeb8ce0f9e43d94187ba8eec4811364e2}\label{funcoes_8h_aeb8ce0f9e43d94187ba8eec4811364e2}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_FUN@{VALOR\_MAX\_FUN}}
+\index{VALOR\_MAX\_FUN@{VALOR\_MAX\_FUN}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_FUN}{VALOR\_MAX\_FUN}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+FUN~4}
+
+
+
+Define o valor maximo possivel no menu do funcionario para escolher o que pretende fazer. 
+
+\mbox{\Hypertarget{funcoes_8h_adda836589f5b269d24cf7b6141a3ee10}\label{funcoes_8h_adda836589f5b269d24cf7b6141a3ee10}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_GERIRCLIENTE@{VALOR\_MAX\_GERIRCLIENTE}}
+\index{VALOR\_MAX\_GERIRCLIENTE@{VALOR\_MAX\_GERIRCLIENTE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_GERIRCLIENTE}{VALOR\_MAX\_GERIRCLIENTE}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+GERIRCLIENTE~3}
+
+
+
+Define o valor maximo possivel no menu de cliente para escolher o que pretende fazer em relaçao aos seus dados de cliente. 
+
+\mbox{\Hypertarget{funcoes_8h_a65faf2bc218886b03ba130383a842f62}\label{funcoes_8h_a65faf2bc218886b03ba130383a842f62}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_GERIRCLIENTEMENU@{VALOR\_MAX\_GERIRCLIENTEMENU}}
+\index{VALOR\_MAX\_GERIRCLIENTEMENU@{VALOR\_MAX\_GERIRCLIENTEMENU}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_GERIRCLIENTEMENU}{VALOR\_MAX\_GERIRCLIENTEMENU}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+GERIRCLIENTEMENU~5}
+
+
+
+Define o valor maximo possivel no menu de gestao de clientes para permitir ao admin escolher o que pretender gerir em relacao a clientes. 
+
+\mbox{\Hypertarget{funcoes_8h_a778a1b7dd8c43ca73baea631f8615619}\label{funcoes_8h_a778a1b7dd8c43ca73baea631f8615619}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_GERIRPRODUTO@{VALOR\_MAX\_GERIRPRODUTO}}
+\index{VALOR\_MAX\_GERIRPRODUTO@{VALOR\_MAX\_GERIRPRODUTO}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_GERIRPRODUTO}{VALOR\_MAX\_GERIRPRODUTO}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+GERIRPRODUTO~9}
+
+
+
+Define o valor maximo possivel no menu de gestao de produtos para permitir ao admin escolher o que pretender gerir em relacao aos produtos. 
+
+\mbox{\Hypertarget{funcoes_8h_a3c720ff299520a5ede03c7c6520315b3}\label{funcoes_8h_a3c720ff299520a5ede03c7c6520315b3}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MAX\_USERS@{VALOR\_MAX\_USERS}}
+\index{VALOR\_MAX\_USERS@{VALOR\_MAX\_USERS}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MAX\_USERS}{VALOR\_MAX\_USERS}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MAX\+\_\+\+USERS~3}
+
+
+
+Define o valor maximo possivel no menu para escolher o tipo de utilizador. 
+
+\mbox{\Hypertarget{funcoes_8h_a1209e04fa3e3f19824ab1f2f792b0664}\label{funcoes_8h_a1209e04fa3e3f19824ab1f2f792b0664}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_ADMIN@{VALOR\_MIN\_ADMIN}}
+\index{VALOR\_MIN\_ADMIN@{VALOR\_MIN\_ADMIN}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_ADMIN}{VALOR\_MIN\_ADMIN}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+ADMIN~0}
+
+
+
+Define o valor minimo possivel no menu de admin para escolher o que pretender gerir na empresa. 
+
+\mbox{\Hypertarget{funcoes_8h_a72cb6f2bdf00083a3d8f493fda8919b4}\label{funcoes_8h_a72cb6f2bdf00083a3d8f493fda8919b4}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_CLIENTE@{VALOR\_MIN\_CLIENTE}}
+\index{VALOR\_MIN\_CLIENTE@{VALOR\_MIN\_CLIENTE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_CLIENTE}{VALOR\_MIN\_CLIENTE}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+CLIENTE~0}
+
+
+
+Define o valor minimo possivel no menu de cliente para escolher o que pretende fazer na empresa. 
+
+\mbox{\Hypertarget{funcoes_8h_ad6d09a19616285a9d9d48306c6802572}\label{funcoes_8h_ad6d09a19616285a9d9d48306c6802572}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_ENCOMENDAS@{VALOR\_MIN\_ENCOMENDAS}}
+\index{VALOR\_MIN\_ENCOMENDAS@{VALOR\_MIN\_ENCOMENDAS}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_ENCOMENDAS}{VALOR\_MIN\_ENCOMENDAS}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+ENCOMENDAS~0}
+
+
+
+Define o valor maxmimo possivel no menu de encomendas para escolher o que pretende fazer em relaçao a encomendas. 
+
+\mbox{\Hypertarget{funcoes_8h_ab639564c99a760096f84e5a338840e27}\label{funcoes_8h_ab639564c99a760096f84e5a338840e27}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_FUN@{VALOR\_MIN\_FUN}}
+\index{VALOR\_MIN\_FUN@{VALOR\_MIN\_FUN}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_FUN}{VALOR\_MIN\_FUN}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+FUN~0}
+
+
+
+Define o valor minimo possivel no menu do funcionario para escolher o que pretende fazer. 
+
+\mbox{\Hypertarget{funcoes_8h_a33c1506062fc673a6eb656881e13ddf7}\label{funcoes_8h_a33c1506062fc673a6eb656881e13ddf7}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_GERIRCLIENTE@{VALOR\_MIN\_GERIRCLIENTE}}
+\index{VALOR\_MIN\_GERIRCLIENTE@{VALOR\_MIN\_GERIRCLIENTE}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_GERIRCLIENTE}{VALOR\_MIN\_GERIRCLIENTE}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+GERIRCLIENTE~0}
+
+
+
+Define o valor minimo possivel no menu de cliente para escolher o que pretende fazer em relaçao aos seus dados de cliente. 
+
+\mbox{\Hypertarget{funcoes_8h_a446d7ef3ca9361521b1ead22aa339bf9}\label{funcoes_8h_a446d7ef3ca9361521b1ead22aa339bf9}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_GERIRCLIENTEMENU@{VALOR\_MIN\_GERIRCLIENTEMENU}}
+\index{VALOR\_MIN\_GERIRCLIENTEMENU@{VALOR\_MIN\_GERIRCLIENTEMENU}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_GERIRCLIENTEMENU}{VALOR\_MIN\_GERIRCLIENTEMENU}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+GERIRCLIENTEMENU~0}
+
+
+
+Define o valor minimo possivel no menu de gestao de clientes para permitir ao admin escolher o que pretender gerir em relacao a clientes. 
+
+\mbox{\Hypertarget{funcoes_8h_a73d7aa3a359b286b462bcdc0817d98f1}\label{funcoes_8h_a73d7aa3a359b286b462bcdc0817d98f1}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_GERIRPRODUTO@{VALOR\_MIN\_GERIRPRODUTO}}
+\index{VALOR\_MIN\_GERIRPRODUTO@{VALOR\_MIN\_GERIRPRODUTO}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_GERIRPRODUTO}{VALOR\_MIN\_GERIRPRODUTO}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+GERIRPRODUTO~0}
+
+
+
+Define o valor minimo possivel no menu de gestao de produtos para permitir ao admin escolher o que pretender gerir em relacao aos produtos. 
+
+\mbox{\Hypertarget{funcoes_8h_a4d0186d8c0fe9810f9d60a1d30b36a98}\label{funcoes_8h_a4d0186d8c0fe9810f9d60a1d30b36a98}} 
+\index{funcoes.h@{funcoes.h}!VALOR\_MIN\_USERS@{VALOR\_MIN\_USERS}}
+\index{VALOR\_MIN\_USERS@{VALOR\_MIN\_USERS}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{VALOR\_MIN\_USERS}{VALOR\_MIN\_USERS}}
+{\footnotesize\ttfamily \#define VALOR\+\_\+\+MIN\+\_\+\+USERS~1}
+
+
+
+Define o valor minimo possivel no menu para escolher o tipo de utilizador. 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funcoes_8h_a516d5dfcb7d682c6e74be274d1e1d0a3}\label{funcoes_8h_a516d5dfcb7d682c6e74be274d1e1d0a3}} 
+\index{funcoes.h@{funcoes.h}!atualizarClienteMorada@{atualizarClienteMorada}}
+\index{atualizarClienteMorada@{atualizarClienteMorada}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{atualizarClienteMorada()}{atualizarClienteMorada()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Morada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{char}]{moradanova\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar a morada do cliente . 
+
+Chama a funçao procuracliente , devolve a posição exata dele e altera a morada para a morada nova inserido pelo utilizador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clientes} & lista dos clientes. \\
+\hline
+{\em id\+Cliente} & id do cliente a procurar. \\
+\hline
+{\em moradanova} & nova morada inserida pelo utilizador\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se o cliente nao existir , 1 se alterar a morada . ~\newline
+
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a957b4df5099b6f652d70182bb01502cc}\label{funcoes_8h_a957b4df5099b6f652d70182bb01502cc}} 
+\index{funcoes.h@{funcoes.h}!atualizarClienteNif@{atualizarClienteNif}}
+\index{atualizarClienteNif@{atualizarClienteNif}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{atualizarClienteNif()}{atualizarClienteNif()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Nif (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{int}]{nifnovo }\end{DoxyParamCaption})}
+
+
+
+Atualizar o nif do cliente . 
+
+Chama a funçao procuracliente , devolve a posição exata dele e altera o nif para o novo nif inserido pelo utilizador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clientes} & lista dos clientes. \\
+\hline
+{\em id\+Cliente} & id do cliente a procurar. \\
+\hline
+{\em nifnovo} & novo nif inserido pelo utilizador\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se o cliente nao existir , 1 se alterar o nif . ~\newline
+
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a04e9031df81ed81da87f1952f43fac6d}\label{funcoes_8h_a04e9031df81ed81da87f1952f43fac6d}} 
+\index{funcoes.h@{funcoes.h}!atualizarClienteNome@{atualizarClienteNome}}
+\index{atualizarClienteNome@{atualizarClienteNome}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{atualizarClienteNome()}{atualizarClienteNome()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Nome (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{char}]{nomenovo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar o nome do cliente . 
+
+Chama a funçao procuracliente , devolve a posição exata dele e altera o nome para o novo nome inserido pelo utilizador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clientes} & lista dos clientes. \\
+\hline
+{\em id\+Cliente} & id do cliente a procurar. \\
+\hline
+{\em nomenovo} & novo nome inserido pelo utilizador\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se o cliente nao existir , 1 se alterar o nome . ~\newline
+
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_abb6900ddab7ada9cccaca2a9ac15ff8a}\label{funcoes_8h_abb6900ddab7ada9cccaca2a9ac15ff8a}} 
+\index{funcoes.h@{funcoes.h}!atualizarClientePais@{atualizarClientePais}}
+\index{atualizarClientePais@{atualizarClientePais}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{atualizarClientePais()}{atualizarClientePais()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Pais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{char}]{paisnovo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar o pais do cliente . 
+
+Chama a funçao procuracliente , devolve a posição exata dele e altera o pais para o novo pais inserido pelo utilizador.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clientes} & lista dos clientes. \\
+\hline
+{\em id\+Cliente} & id do cliente a procurar. \\
+\hline
+{\em paisnovo} & novo pais inserido pelo utilizador\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 se o cliente nao existir , 1 se alterar o pais . ~\newline
+
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a82f2350774875f5499fc9dbd131f6fbe}\label{funcoes_8h_a82f2350774875f5499fc9dbd131f6fbe}} 
+\index{funcoes.h@{funcoes.h}!inserirCliente@{inserirCliente}}
+\index{inserirCliente@{inserirCliente}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{inserirCliente()}{inserirCliente()}}
+{\footnotesize\ttfamily int inserir\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{listacliente,  }\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+
+
+Insere um cliente na lista . 
+
+Esta função chama a funçao de procurar o cliente retorna a posicao ,verifica se a posiçao nao e -\/1, verifica se a memoria reservada para a lista na main é igual ao contador , se for reserva mais 5 espaços na memoria, e por fim adiciona o cliente na lista e aumenta o contador. ~\newline
+
+
+@params lista cliente Lista de clientes. @params cliente Um cliente apenas.
+
+\begin{DoxyReturn}{Returns}
+Devolve 0 se ja existir alguem com aquele id e nao adiciona , e devolve 1 se adicionou .
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a6c6ae5af6f6967e5bc20f4c41d0c4f2f}\label{funcoes_8h_a6c6ae5af6f6967e5bc20f4c41d0c4f2f}} 
+\index{funcoes.h@{funcoes.h}!limpaBuffer@{limpaBuffer}}
+\index{limpaBuffer@{limpaBuffer}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{limpaBuffer()}{limpaBuffer()}}
+{\footnotesize\ttfamily void limpa\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Limpa o Buffer. 
+
+Sempre que existir Lixo no Buffer e executar a funçao ele é limpo.
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a82fa1a337f56c183c86e0aab094a7ef5}\label{funcoes_8h_a82fa1a337f56c183c86e0aab094a7ef5}} 
+\index{funcoes.h@{funcoes.h}!obterCaratere@{obterCaratere}}
+\index{obterCaratere@{obterCaratere}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{obterCaratere()}{obterCaratere()}}
+{\footnotesize\ttfamily char obter\+Caratere (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+Ler um caratere. 
+
+Recebe um caratere e verifica se ele não é diferente de s/S ou n/N.
+
+@params msg Mensagem a pedir o que o utilizador insira o caratere.
+
+\begin{DoxyReturn}{Returns}
+c Devolve o caratere depois de verificar.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}\label{funcoes_8h_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}} 
+\index{funcoes.h@{funcoes.h}!obterInt@{obterInt}}
+\index{obterInt@{obterInt}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{obterInt()}{obterInt()}}
+{\footnotesize\ttfamily int obter\+Int (\begin{DoxyParamCaption}\item[{int}]{min\+Valor,  }\item[{int}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+Obter um numero Inteiro. 
+
+Esta funçao recebe um valor verifica se é do tipo inteiro e se esta entre os valores maximo e minimo recebidos como argumentos.
+
+@params min\+Valor Valor minimo permitido que seja inserido. @params max\+Valor Valor maximo permitido que seja inserido. @params msg Mensagem a pedir o valor ao utilizador.
+
+\begin{DoxyReturn}{Returns}
+Valor Devolve o valor que foi inserido depois do processo todo de verificação
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a8c74537be79f44a226c780b918e0a99f}\label{funcoes_8h_a8c74537be79f44a226c780b918e0a99f}} 
+\index{funcoes.h@{funcoes.h}!OrdenaClientes@{OrdenaClientes}}
+\index{OrdenaClientes@{OrdenaClientes}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{OrdenaClientes()}{OrdenaClientes()}}
+{\footnotesize\ttfamily void Ordena\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+
+ordena e imprime 
+
+verifica o numero de encomendas dos clientes , chama a funçao que troca os clientes de posiçao e no final imprime a lista dos clientes.
+
+
+\begin{DoxyParams}{Parameters}
+{\em clientes} & lista de clientes\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_ae60bd50811a283b49bd7dbbc8e57a1c7}\label{funcoes_8h_ae60bd50811a283b49bd7dbbc8e57a1c7}} 
+\index{funcoes.h@{funcoes.h}!procuraCliente@{procuraCliente}}
+\index{procuraCliente@{procuraCliente}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{procuraCliente()}{procuraCliente()}}
+{\footnotesize\ttfamily void procura\+Cliente (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{const int $\ast$}]{num,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+@prief Procura um cliente na lista de clientes.
+
+A posiçao começa com um valor e eu enquanto a pos for igual ao valor inicial, e o i que é iniciado a zero for menor que o tamanho da lista , verifica se o numero do cliente que deseja procurar é igual a algum dos que existe na lista clientes , e devolve a posiçao dele na lista .
+
+@params lista cliente Lista dos clientes . @params num Numero inserido que vai ser o id que deseja procurar. @params pos A posicao onde se encontra o cliente que vai ser devolvida.
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_adc90bdab0c0ec70baeffa0aff92a2c81}\label{funcoes_8h_adc90bdab0c0ec70baeffa0aff92a2c81}} 
+\index{funcoes.h@{funcoes.h}!registarCliente@{registarCliente}}
+\index{registarCliente@{registarCliente}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{registarCliente()}{registarCliente()}}
+{\footnotesize\ttfamily void registar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+
+
+Guarda e regista os dados do cliente. 
+
+Esta função pede todos os dados que um cliente pode ter num certo sitio , e depois guarda os numa variavel , que quando chama a funçao inserir insere todos os dados registados aqui.\texorpdfstring{$<$}{<}
+
+@params \mbox{\hyperlink{struct_cliente}{Cliente}} Recebe a struct cliente.
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_a3266471bed6047a97a9d167eba6d622e}\label{funcoes_8h_a3266471bed6047a97a9d167eba6d622e}} 
+\index{funcoes.h@{funcoes.h}!removerCliente@{removerCliente}}
+\index{removerCliente@{removerCliente}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{removerCliente()}{removerCliente()}}
+{\footnotesize\ttfamily int remover\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente }\end{DoxyParamCaption})}
+
+
+
+Remove o cliente da lista ou muda o seu estado para inativo . 
+
+Esta funçao chama a funçao procuracliente que devolve a posicao na lista do cliente que o utilizador quer remover , verifica se esse cliente ja tem alguma encomenda registada , se tiver altera o estado para inativo senao apaga o cliente da lista passando os clientes a partir da posicao dele, todos uma posicao pra tras , no fim retira um valor no contador.
+
+@params clientes Lista dos clientes. @params idcliente Id do cliente a remover pedido ao utilizador.
+
+\begin{DoxyReturn}{Returns}
+0 se a posiçao for -\/1 , 1 se remover ou se alterar o estado para inativo.
+\end{DoxyReturn}
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8h_ae739794f40abd6ae9f4c9f967c2f48eb}\label{funcoes_8h_ae739794f40abd6ae9f4c9f967c2f48eb}} 
+\index{funcoes.h@{funcoes.h}!trocaClientes@{trocaClientes}}
+\index{trocaClientes@{trocaClientes}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{trocaClientes()}{trocaClientes()}}
+{\footnotesize\ttfamily void troca\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente1,  }\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente2 }\end{DoxyParamCaption})}
+
+
+
+ordena os clientes 
+
+troca para um temporiario o primeiro ,troca o segundo para o primeiro , e depois troca o segundo para temporario.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cliente1} & cliente da lista \\
+\hline
+{\em cliente2} & cliente da lista\\
+\hline
+\end{DoxyParams}
+@inherit\+Doc 

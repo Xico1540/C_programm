@@ -1,0 +1,166 @@
+\hypertarget{funcoes_8c}{}\doxysection{funcoes.\+c File Reference}
+\label{funcoes_8c}\index{funcoes.c@{funcoes.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funcoes_8c_a6c6ae5af6f6967e5bc20f4c41d0c4f2f}{limpa\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Limpa o Buffer. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obter\+Int}} (int min\+Valor, int max\+Valor, char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Obter um numero Inteiro. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{funcoes_8c_a82fa1a337f56c183c86e0aab094a7ef5}{obter\+Caratere}} (char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Ler um caratere. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8c_a4b44f716f91db40f7eb5992d41c83f8e}{procura\+Cliente}} (const \mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, const int $\ast$num, int $\ast$pos)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a82f2350774875f5499fc9dbd131f6fbe}{inserir\+Cliente}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$listacliente, \mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente)
+\begin{DoxyCompactList}\small\item\em Insere um cliente na lista . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8c_adc90bdab0c0ec70baeffa0aff92a2c81}{registar\+Cliente}} (\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente)
+\begin{DoxyCompactList}\small\item\em Guarda e regista os dados do cliente. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8c_a957b4df5099b6f652d70182bb01502cc}{atualizar\+Cliente\+Nif}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, int nifnovo)
+\begin{DoxyCompactList}\small\item\em Atualizar o nif do cliente . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8c_a04e9031df81ed81da87f1952f43fac6d}{atualizar\+Cliente\+Nome}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, char nomenovo\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar o nome do cliente . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8c_abb6900ddab7ada9cccaca2a9ac15ff8a}{atualizar\+Cliente\+Pais}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, char paisnovo\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar o pais do cliente . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8c_a516d5dfcb7d682c6e74be274d1e1d0a3}{atualizar\+Cliente\+Morada}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente, char moradanova\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Atualizar a morada do cliente . \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{funcoes_8c_a3266471bed6047a97a9d167eba6d622e}{remover\+Cliente}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes, int $\ast$id\+Cliente)
+\begin{DoxyCompactList}\small\item\em Remove o cliente da lista ou muda o seu estado para inativo . \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8c_ae739794f40abd6ae9f4c9f967c2f48eb}{troca\+Clientes}} (\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente1, \mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$cliente2)
+\begin{DoxyCompactList}\small\item\em ordena os clientes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funcoes_8c_a8c74537be79f44a226c780b918e0a99f}{Ordena\+Clientes}} (\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\begin{DoxyCompactList}\small\item\em ordena e imprime \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{funcoes_8c_a516d5dfcb7d682c6e74be274d1e1d0a3}\label{funcoes_8c_a516d5dfcb7d682c6e74be274d1e1d0a3}} 
+\index{funcoes.c@{funcoes.c}!atualizarClienteMorada@{atualizarClienteMorada}}
+\index{atualizarClienteMorada@{atualizarClienteMorada}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{atualizarClienteMorada()}{atualizarClienteMorada()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Morada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{char}]{moradanova\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar a morada do cliente . 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a957b4df5099b6f652d70182bb01502cc}\label{funcoes_8c_a957b4df5099b6f652d70182bb01502cc}} 
+\index{funcoes.c@{funcoes.c}!atualizarClienteNif@{atualizarClienteNif}}
+\index{atualizarClienteNif@{atualizarClienteNif}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{atualizarClienteNif()}{atualizarClienteNif()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Nif (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{int}]{nifnovo }\end{DoxyParamCaption})}
+
+
+
+Atualizar o nif do cliente . 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a04e9031df81ed81da87f1952f43fac6d}\label{funcoes_8c_a04e9031df81ed81da87f1952f43fac6d}} 
+\index{funcoes.c@{funcoes.c}!atualizarClienteNome@{atualizarClienteNome}}
+\index{atualizarClienteNome@{atualizarClienteNome}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{atualizarClienteNome()}{atualizarClienteNome()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Nome (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{char}]{nomenovo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar o nome do cliente . 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_abb6900ddab7ada9cccaca2a9ac15ff8a}\label{funcoes_8c_abb6900ddab7ada9cccaca2a9ac15ff8a}} 
+\index{funcoes.c@{funcoes.c}!atualizarClientePais@{atualizarClientePais}}
+\index{atualizarClientePais@{atualizarClientePais}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{atualizarClientePais()}{atualizarClientePais()}}
+{\footnotesize\ttfamily int atualizar\+Cliente\+Pais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente,  }\item[{char}]{paisnovo\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+
+
+Atualizar o pais do cliente . 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a82f2350774875f5499fc9dbd131f6fbe}\label{funcoes_8c_a82f2350774875f5499fc9dbd131f6fbe}} 
+\index{funcoes.c@{funcoes.c}!inserirCliente@{inserirCliente}}
+\index{inserirCliente@{inserirCliente}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{inserirCliente()}{inserirCliente()}}
+{\footnotesize\ttfamily int inserir\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{listacliente,  }\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+
+
+Insere um cliente na lista . 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a6c6ae5af6f6967e5bc20f4c41d0c4f2f}\label{funcoes_8c_a6c6ae5af6f6967e5bc20f4c41d0c4f2f}} 
+\index{funcoes.c@{funcoes.c}!limpaBuffer@{limpaBuffer}}
+\index{limpaBuffer@{limpaBuffer}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{limpaBuffer()}{limpaBuffer()}}
+{\footnotesize\ttfamily void limpa\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Limpa o Buffer. 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a82fa1a337f56c183c86e0aab094a7ef5}\label{funcoes_8c_a82fa1a337f56c183c86e0aab094a7ef5}} 
+\index{funcoes.c@{funcoes.c}!obterCaratere@{obterCaratere}}
+\index{obterCaratere@{obterCaratere}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{obterCaratere()}{obterCaratere()}}
+{\footnotesize\ttfamily char obter\+Caratere (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+Ler um caratere. 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}\label{funcoes_8c_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}} 
+\index{funcoes.c@{funcoes.c}!obterInt@{obterInt}}
+\index{obterInt@{obterInt}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{obterInt()}{obterInt()}}
+{\footnotesize\ttfamily int obter\+Int (\begin{DoxyParamCaption}\item[{int}]{min\+Valor,  }\item[{int}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+
+
+Obter um numero Inteiro. 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a8c74537be79f44a226c780b918e0a99f}\label{funcoes_8c_a8c74537be79f44a226c780b918e0a99f}} 
+\index{funcoes.c@{funcoes.c}!OrdenaClientes@{OrdenaClientes}}
+\index{OrdenaClientes@{OrdenaClientes}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{OrdenaClientes()}{OrdenaClientes()}}
+{\footnotesize\ttfamily void Ordena\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+
+ordena e imprime 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a4b44f716f91db40f7eb5992d41c83f8e}\label{funcoes_8c_a4b44f716f91db40f7eb5992d41c83f8e}} 
+\index{funcoes.c@{funcoes.c}!procuraCliente@{procuraCliente}}
+\index{procuraCliente@{procuraCliente}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{procuraCliente()}{procuraCliente()}}
+{\footnotesize\ttfamily void procura\+Cliente (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{const int $\ast$}]{num,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_adc90bdab0c0ec70baeffa0aff92a2c81}\label{funcoes_8c_adc90bdab0c0ec70baeffa0aff92a2c81}} 
+\index{funcoes.c@{funcoes.c}!registarCliente@{registarCliente}}
+\index{registarCliente@{registarCliente}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{registarCliente()}{registarCliente()}}
+{\footnotesize\ttfamily void registar\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente }\end{DoxyParamCaption})}
+
+
+
+Guarda e regista os dados do cliente. 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_a3266471bed6047a97a9d167eba6d622e}\label{funcoes_8c_a3266471bed6047a97a9d167eba6d622e}} 
+\index{funcoes.c@{funcoes.c}!removerCliente@{removerCliente}}
+\index{removerCliente@{removerCliente}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{removerCliente()}{removerCliente()}}
+{\footnotesize\ttfamily int remover\+Cliente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes,  }\item[{int $\ast$}]{id\+Cliente }\end{DoxyParamCaption})}
+
+
+
+Remove o cliente da lista ou muda o seu estado para inativo . 
+
+@inherit\+Doc \mbox{\Hypertarget{funcoes_8c_ae739794f40abd6ae9f4c9f967c2f48eb}\label{funcoes_8c_ae739794f40abd6ae9f4c9f967c2f48eb}} 
+\index{funcoes.c@{funcoes.c}!trocaClientes@{trocaClientes}}
+\index{trocaClientes@{trocaClientes}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{trocaClientes()}{trocaClientes()}}
+{\footnotesize\ttfamily void troca\+Clientes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente1,  }\item[{\mbox{\hyperlink{struct_cliente}{Cliente}} $\ast$}]{cliente2 }\end{DoxyParamCaption})}
+
+
+
+ordena os clientes 
+
+@inherit\+Doc 

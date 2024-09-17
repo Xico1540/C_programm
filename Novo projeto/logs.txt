@@ -1,0 +1,1 @@
+2023-01-23 16:01:11 - id do funcionario :1212 ,entrada

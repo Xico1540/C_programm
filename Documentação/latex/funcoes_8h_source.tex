@@ -1,0 +1,74 @@
+\hypertarget{funcoes_8h_source}{}\doxysection{funcoes.\+h}
+\mbox{\hyperlink{funcoes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-\/default.txt\ to\ change\ this\ license}}
+\DoxyCodeLine{00003\ \textcolor{comment}{\ *\ Click\ nbfs://nbhost/SystemFileSystem/Templates/cFiles/file\_header.h\ to\ edit\ this\ template}}
+\DoxyCodeLine{00004\ \textcolor{comment}{\ \ */}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{comment}{/*\ }}
+\DoxyCodeLine{00007\ \textcolor{comment}{\ *\ File:\ \ \ funcoes.h}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ *\ Author:\ Xico}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ *}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ *\ Created\ on\ 22\ de\ dezembro\ de\ 2022,\ 22:00}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ */}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#ifndef\ FUNCOES\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#define\ FUNCOES\_H}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{structs_8h}{structs.h}}"{}}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#define\ LER\_UTILIZADOR\ "{}\ -\/-\/-\/-\/\ Bem\ vindo\ á\ Moveis\ para\ Todos\ -\/-\/-\/-\/-\/\ \(\backslash\)n\ Qual\ o\ seu\ tipo\ de\ utilizador:\(\backslash\)n\ -\/1-\/Admin-\/\(\backslash\)n\ -\/2-\/Cliente\(\backslash\)n\ -\/3-\/Funcionario\(\backslash\)n-\/:"{}}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00027\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_USERS\ 3}}
+\DoxyCodeLine{00032\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_USERS\ 1}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_ADMIN\ 3}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_ADMIN\ 0}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#define\ ADMIN\_MENU\ "{}Bem\ vindo\ administrador,\ o\ que\ pretende\ fazer\ na\ :\(\backslash\)n1\ -\/\ Gestao\ de\ clientes\ \(\backslash\)n2\ -\/\ Gestao\ de\ Produtos\ \(\backslash\)n3\ -\/\ Gestao\ de\ Producao\(\backslash\)n0\ -\/\ Voltar\(\backslash\)n-\/"{}}\ \ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00055\ \textcolor{preprocessor}{\#define\ GESTAO\_CLIENTE\ "{}-\/-\/-\/-\/Gestao\ de\ clientes-\/-\/-\/-\/\ \(\backslash\)n\ Pretende:\(\backslash\)n0-\/\ voltar\(\backslash\)n1\ -\/\ Criar\ novo\ cliente\(\backslash\)n2\ -\/\ Editar\ cliente\(\backslash\)n3\ -\/\ Remover\ cliente\(\backslash\)n4\ -\/\ Imprimir\ lista\ de\ clientes\(\backslash\)n5\ -\/\ Ordenar\ clientes\ por\ ordem\ decrescente\ de\ encomendas\(\backslash\)n-\/"{}}}
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_GERIRCLIENTEMENU\ 5}}
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_GERIRCLIENTEMENU\ 0}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00072\ \textcolor{preprocessor}{\#define\ GESTAO\_PRODUTOS\ "{}-\/-\/-\/-\/-\/Gestao\ de\ Produtos-\/-\/-\/-\/\(\backslash\)n\ Pretende\ para\ a\ gestao\ dos\ produtos:\(\backslash\)n0-\/voltar\(\backslash\)n1\ -\/\ Criar\ um\ material\ \(\backslash\)n2\ -\/\ Editar\ um\ material\(\backslash\)n3\ -\/\ Remover\ material\(\backslash\)n4\ -\/\ Listar\ materiais\(\backslash\)n5\ -\/\ Criar\ produto\(\backslash\)n6\ -\/\ Editar\ produto\(\backslash\)n7\ -\/\ Remover\ produto\(\backslash\)n8\ -\/\ Listar\ produtos\(\backslash\)n9\ -\/\ Ordenar\ produtos\ por\ preço\ descendente\(\backslash\)n-\/"{}}}
+\DoxyCodeLine{00077\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_GERIRPRODUTO\ 9}}
+\DoxyCodeLine{00082\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_GERIRPRODUTO\ 0}}
+\DoxyCodeLine{00083\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_CLIENTE\ 2}}
+\DoxyCodeLine{00093\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_CLIENTE\ 0}}
+\DoxyCodeLine{00098\ \textcolor{preprocessor}{\#define\ MENU\_CLIENTE\ "{}Bem\ vindo\ Cliente,\ o\ que\ procura\ :\(\backslash\)n1\ -\/Gerir\ cliente\(\backslash\)n2-\/Encomendas\(\backslash\)n0\ -\/Voltar\(\backslash\)n-\/"{}}}
+\DoxyCodeLine{00103\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_GERIRCLIENTE\ 3}}
+\DoxyCodeLine{00108\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_GERIRCLIENTE\ 0}}
+\DoxyCodeLine{00113\ \textcolor{preprocessor}{\#define\ GERIR\_CLIENTE\ "{}-\/-\/-\/-\/Gerir\ cliente-\/-\/-\/-\/\ \(\backslash\)n\ Deseja:\(\backslash\)n0-\/voltar\(\backslash\)n1\ -\/\ Registar-\/me\ como\ novo\ cliente\(\backslash\)n2\ -\/\ Editar\ os\ meus\ dados\ pessoais\ \(\backslash\)n3\ -\/\ Remover\ me\ da\ lista\ de\ clientes\(\backslash\)n-\/"{}}}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00119\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_ENCOMENDAS\ 4}}
+\DoxyCodeLine{00124\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_ENCOMENDAS\ 0}}
+\DoxyCodeLine{00129\ \textcolor{preprocessor}{\#define\ ENCOMENDAS\ "{}-\/-\/-\/-\/-\/Encomendas-\/-\/-\/-\/\ \(\backslash\)n\ Escolha\ a\ opcao\ relativa\ a\ sua\ encomenda:\(\backslash\)n0-\/voltar\(\backslash\)n1\ -\/\ Registar\ encomenda\(\backslash\)n2\ -\/\ Alterar\ encomenda\(\backslash\)n3\ -\/\ Eleminar\ encomenda\(\backslash\)n4-\/\ Listar\ encomendas\(\backslash\)n-\/"{}}}
+\DoxyCodeLine{00134\ \textcolor{preprocessor}{\#define\ VALOR\_MIN\_FUN\ 0}}
+\DoxyCodeLine{00139\ \textcolor{preprocessor}{\#define\ VALOR\_MAX\_FUN\ 4}}
+\DoxyCodeLine{00144\ \textcolor{preprocessor}{\#define\ FUNCIONARIO\ "{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/Bem\ vindo\ Funcionario\ -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n\ O\ que\ pretende\ fazer\ :\(\backslash\)n0\ -\/\ Voltar\(\backslash\)n1\ -\/\ Dar\ entrada\ ou\ saida\(\backslash\)n2\ -\/\ Ver\ lista\ de\ produtos\(\backslash\)n3\ -\/\ Ver\ lista\ de\ componentes\(\backslash\)n4\ -\/\ Ver\ lista\ de\ encomendas\(\backslash\)n-\/"{}}}
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#define\ CARATERE\ "{}Pretende\ continuar\ na\ aplicacao\ digite\ n-\/nao\ ,s-\/sim:\(\backslash\)n-\/"{}}}
+\DoxyCodeLine{00154\ \textcolor{preprocessor}{\#define\ VALOR\_INVALIDO\ "{}O\ valor\ inserido\ é\ inválido,\ digite\ um\ valor\ válido.\(\backslash\)n"{}}}
+\DoxyCodeLine{00159\ \textcolor{preprocessor}{\#define\ CARATERE\_INVALIDO\ "{}Caratere\ inserido\ é\ invalido,digite\ um\ caratere\ correto.\(\backslash\)n"{}}}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00165\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funcoes_8h_a6c6ae5af6f6967e5bc20f4c41d0c4f2f}{limpaBuffer}}();}
+\DoxyCodeLine{00177\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funcoes_8h_a1c16d4a2fbe0b0a0b0f9407f7ff1fe9f}{obterInt}}(\textcolor{keywordtype}{int}\ minValor,\ \textcolor{keywordtype}{int}\ maxValor,\ \textcolor{keywordtype}{char}\ *msg);}
+\DoxyCodeLine{00186\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{funcoes_8h_a82fa1a337f56c183c86e0aab094a7ef5}{obterCaratere}}(\textcolor{keywordtype}{char}*msg);}
+\DoxyCodeLine{00198\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funcoes_8h_ae60bd50811a283b49bd7dbbc8e57a1c7}{procuraCliente}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_clientes}{Clientes}}*\ listacliente,\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}*\ num,\ \textcolor{keywordtype}{int}*\ pos);}
+\DoxyCodeLine{00210\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funcoes_8h_a82f2350774875f5499fc9dbd131f6fbe}{inserirCliente}}(\mbox{\hyperlink{struct_clientes}{Clientes}}*\ listacliente,\ \mbox{\hyperlink{struct_cliente}{Cliente}}*\ cliente);}
+\DoxyCodeLine{00217\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funcoes_8h_adc90bdab0c0ec70baeffa0aff92a2c81}{registarCliente}}(\mbox{\hyperlink{struct_cliente}{Cliente}}*\ cliente);}
+\DoxyCodeLine{00229\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funcoes_8h_a3266471bed6047a97a9d167eba6d622e}{removerCliente}}(\mbox{\hyperlink{struct_clientes}{Clientes}}\ *clientes,\ \textcolor{keywordtype}{int}\ *idCliente);}
+\DoxyCodeLine{00240\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funcoes_8h_a957b4df5099b6f652d70182bb01502cc}{atualizarClienteNif}}(\mbox{\hyperlink{struct_clientes}{Clientes}}\ *clientes,\ \textcolor{keywordtype}{int}\ *idCliente,\textcolor{keywordtype}{int}\ nifnovo);}
+\DoxyCodeLine{00251\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funcoes_8h_a04e9031df81ed81da87f1952f43fac6d}{atualizarClienteNome}}(\mbox{\hyperlink{struct_clientes}{Clientes}}\ *clientes,\ \textcolor{keywordtype}{int}\ *idCliente,\textcolor{keywordtype}{char}\ nomenovo[]);}
+\DoxyCodeLine{00262\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funcoes_8h_abb6900ddab7ada9cccaca2a9ac15ff8a}{atualizarClientePais}}(\mbox{\hyperlink{struct_clientes}{Clientes}}\ *clientes,\ \textcolor{keywordtype}{int}\ *idCliente,\textcolor{keywordtype}{char}\ paisnovo[]);}
+\DoxyCodeLine{00273\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{funcoes_8h_a516d5dfcb7d682c6e74be274d1e1d0a3}{atualizarClienteMorada}}(\mbox{\hyperlink{struct_clientes}{Clientes}}\ *clientes,\ \textcolor{keywordtype}{int}\ *idCliente,\textcolor{keywordtype}{char}\ moradanova[]);}
+\DoxyCodeLine{00274\ }
+\DoxyCodeLine{00283\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funcoes_8h_ae739794f40abd6ae9f4c9f967c2f48eb}{trocaClientes}}(\mbox{\hyperlink{struct_cliente}{Cliente}}\ *cliente1,\ \mbox{\hyperlink{struct_cliente}{Cliente}}\ *cliente2);}
+\DoxyCodeLine{00291\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{funcoes_8h_a8c74537be79f44a226c780b918e0a99f}{OrdenaClientes}}(\mbox{\hyperlink{struct_clientes}{Clientes}}\ *clientes);}
+\DoxyCodeLine{00292\ }
+\DoxyCodeLine{00293\ }
+\DoxyCodeLine{00294\ }
+\DoxyCodeLine{00295\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ FUNCOES\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

@@ -1,0 +1,148 @@
+\hypertarget{encomendas_8c}{}\doxysection{encomendas.\+c File Reference}
+\label{encomendas_8c}\index{encomendas.c@{encomendas.c}}
+{\ttfamily \#include \char`\"{}encomendas.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}produtos.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{encomendas_8c_a1781eae059dc7d25bd4351db1f1331ff}{procura\+Prod}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda, char $\ast$cod, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em procura um produto numa certa encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8c_a1a8a98ae169c0613b589f150e0b684fe}{inserir\+Produto\+Encomenda}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda, \mbox{\hyperlink{structprod}{prod}} $\ast$m)
+\begin{DoxyCompactList}\small\item\em insere um produto numa certa encomenda \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8c_ad346a68ec5c0c28ee67f9348019f8cdd}{editar\+Produto\+Quantidade}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$idprocura, int numprocura, int quantidadenova)
+\begin{DoxyCompactList}\small\item\em alterar a quantidade de um certo produto dentro de uma certa encomenda. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8c_a449c7e2b389a87afd9a79a98e2291ef2}{remover\+Prod}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$idprocura, int numprocura)
+\begin{DoxyCompactList}\small\item\em remove um produto dentro de uma encomenda \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8c_a052da4fbf89e53919b49d8194dbc5c48}{procura\+Encomenda}} (const \mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, const int $\ast$num, int $\ast$pos)
+\begin{DoxyCompactList}\small\item\em procura uma encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8c_afbaaf542a8796ca277b61fd8e83a3877}{inserir\+Encomenda}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$listaencomendas, \mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda)
+\begin{DoxyCompactList}\small\item\em insere uma encomenda \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{encomendas_8c_a4e9700ccb53db60907ae06b4fa60b3d2}{registar\+Encomenda}} (\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$encomenda, \mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$produtos, \mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$clientes)
+\begin{DoxyCompactList}\small\item\em regista uma encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8c_aee9df9f92bebd8469154fe7b5a45a69c}{atualizar\+Encomenda\+Dia}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda, int dianovo)
+\begin{DoxyCompactList}\small\item\em atualiza o dia da encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8c_a0a89366447da79119876f217584b1779}{atualizar\+Encomenda\+Mes}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda, int mesnovo)
+\begin{DoxyCompactList}\small\item\em atualiza o mes da encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8c_a8c0ccf07efeb6a886b4fb16e731c2238}{atualizar\+Encomenda\+Ano}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda, int anonovo)
+\begin{DoxyCompactList}\small\item\em atualiza o ano da encomenda \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{encomendas_8c_ae4f3ffedb97352c770e2ff3a60e688a1}{remover\+Encomenda}} (\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$encomendas, int $\ast$numencomenda)
+\begin{DoxyCompactList}\small\item\em Remove uma encomenda. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{encomendas_8c_a8c0ccf07efeb6a886b4fb16e731c2238}\label{encomendas_8c_a8c0ccf07efeb6a886b4fb16e731c2238}} 
+\index{encomendas.c@{encomendas.c}!atualizarEncomendaAno@{atualizarEncomendaAno}}
+\index{atualizarEncomendaAno@{atualizarEncomendaAno}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{atualizarEncomendaAno()}{atualizarEncomendaAno()}}
+{\footnotesize\ttfamily int atualizar\+Encomenda\+Ano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda,  }\item[{int}]{anonovo }\end{DoxyParamCaption})}
+
+
+
+atualiza o ano da encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_aee9df9f92bebd8469154fe7b5a45a69c}\label{encomendas_8c_aee9df9f92bebd8469154fe7b5a45a69c}} 
+\index{encomendas.c@{encomendas.c}!atualizarEncomendaDia@{atualizarEncomendaDia}}
+\index{atualizarEncomendaDia@{atualizarEncomendaDia}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{atualizarEncomendaDia()}{atualizarEncomendaDia()}}
+{\footnotesize\ttfamily int atualizar\+Encomenda\+Dia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda,  }\item[{int}]{dianovo }\end{DoxyParamCaption})}
+
+
+
+atualiza o dia da encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_a0a89366447da79119876f217584b1779}\label{encomendas_8c_a0a89366447da79119876f217584b1779}} 
+\index{encomendas.c@{encomendas.c}!atualizarEncomendaMes@{atualizarEncomendaMes}}
+\index{atualizarEncomendaMes@{atualizarEncomendaMes}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{atualizarEncomendaMes()}{atualizarEncomendaMes()}}
+{\footnotesize\ttfamily int atualizar\+Encomenda\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda,  }\item[{int}]{mesnovo }\end{DoxyParamCaption})}
+
+
+
+atualiza o mes da encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_ad346a68ec5c0c28ee67f9348019f8cdd}\label{encomendas_8c_ad346a68ec5c0c28ee67f9348019f8cdd}} 
+\index{encomendas.c@{encomendas.c}!editarProdutoQuantidade@{editarProdutoQuantidade}}
+\index{editarProdutoQuantidade@{editarProdutoQuantidade}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{editarProdutoQuantidade()}{editarProdutoQuantidade()}}
+{\footnotesize\ttfamily void editar\+Produto\+Quantidade (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{idprocura,  }\item[{int}]{numprocura,  }\item[{int}]{quantidadenova }\end{DoxyParamCaption})}
+
+
+
+alterar a quantidade de um certo produto dentro de uma certa encomenda. 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_afbaaf542a8796ca277b61fd8e83a3877}\label{encomendas_8c_afbaaf542a8796ca277b61fd8e83a3877}} 
+\index{encomendas.c@{encomendas.c}!inserirEncomenda@{inserirEncomenda}}
+\index{inserirEncomenda@{inserirEncomenda}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{inserirEncomenda()}{inserirEncomenda()}}
+{\footnotesize\ttfamily int inserir\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{listaencomendas,  }\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda }\end{DoxyParamCaption})}
+
+
+
+insere uma encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_a1a8a98ae169c0613b589f150e0b684fe}\label{encomendas_8c_a1a8a98ae169c0613b589f150e0b684fe}} 
+\index{encomendas.c@{encomendas.c}!inserirProdutoEncomenda@{inserirProdutoEncomenda}}
+\index{inserirProdutoEncomenda@{inserirProdutoEncomenda}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{inserirProdutoEncomenda()}{inserirProdutoEncomenda()}}
+{\footnotesize\ttfamily int inserir\+Produto\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda,  }\item[{\mbox{\hyperlink{structprod}{prod}} $\ast$}]{m }\end{DoxyParamCaption})}
+
+
+
+insere um produto numa certa encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_a052da4fbf89e53919b49d8194dbc5c48}\label{encomendas_8c_a052da4fbf89e53919b49d8194dbc5c48}} 
+\index{encomendas.c@{encomendas.c}!procuraEncomenda@{procuraEncomenda}}
+\index{procuraEncomenda@{procuraEncomenda}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{procuraEncomenda()}{procuraEncomenda()}}
+{\footnotesize\ttfamily void procura\+Encomenda (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{const int $\ast$}]{num,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+procura uma encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_a1781eae059dc7d25bd4351db1f1331ff}\label{encomendas_8c_a1781eae059dc7d25bd4351db1f1331ff}} 
+\index{encomendas.c@{encomendas.c}!procuraProd@{procuraProd}}
+\index{procuraProd@{procuraProd}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{procuraProd()}{procuraProd()}}
+{\footnotesize\ttfamily void procura\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda,  }\item[{char $\ast$}]{cod,  }\item[{int $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+procura um produto numa certa encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_a4e9700ccb53db60907ae06b4fa60b3d2}\label{encomendas_8c_a4e9700ccb53db60907ae06b4fa60b3d2}} 
+\index{encomendas.c@{encomendas.c}!registarEncomenda@{registarEncomenda}}
+\index{registarEncomenda@{registarEncomenda}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{registarEncomenda()}{registarEncomenda()}}
+{\footnotesize\ttfamily void registar\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomenda}{Encomenda}} $\ast$}]{encomenda,  }\item[{\mbox{\hyperlink{struct_produtos}{Produtos}} $\ast$}]{produtos,  }\item[{\mbox{\hyperlink{struct_clientes}{Clientes}} $\ast$}]{clientes }\end{DoxyParamCaption})}
+
+
+
+regista uma encomenda 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_ae4f3ffedb97352c770e2ff3a60e688a1}\label{encomendas_8c_ae4f3ffedb97352c770e2ff3a60e688a1}} 
+\index{encomendas.c@{encomendas.c}!removerEncomenda@{removerEncomenda}}
+\index{removerEncomenda@{removerEncomenda}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{removerEncomenda()}{removerEncomenda()}}
+{\footnotesize\ttfamily int remover\+Encomenda (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{numencomenda }\end{DoxyParamCaption})}
+
+
+
+Remove uma encomenda. 
+
+@inherit\+Doc \mbox{\Hypertarget{encomendas_8c_a449c7e2b389a87afd9a79a98e2291ef2}\label{encomendas_8c_a449c7e2b389a87afd9a79a98e2291ef2}} 
+\index{encomendas.c@{encomendas.c}!removerProd@{removerProd}}
+\index{removerProd@{removerProd}!encomendas.c@{encomendas.c}}
+\doxysubsubsection{\texorpdfstring{removerProd()}{removerProd()}}
+{\footnotesize\ttfamily void remover\+Prod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_encomendas}{Encomendas}} $\ast$}]{encomendas,  }\item[{int $\ast$}]{idprocura,  }\item[{int}]{numprocura }\end{DoxyParamCaption})}
+
+
+
+remove um produto dentro de uma encomenda 
+
+@inherit\+Doc 
